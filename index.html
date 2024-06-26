@@ -1,113 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
-        <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-        <script src="./script.js"></script>
-        <title>Kirsten Barrett</title>
-    </head>
+<html lang="en" class="theme-default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the meta description.">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- end google fonts-->
+    <link rel="stylesheet" href="style.css">
+    <title>Kirsten Barrett</title>
+</head>
 
-    <body>
-        <header>
-            <nav class="nav" id="nav">
-                <a href="./index.html"><img src='./images/signature.png' onmouseover="this.src='./images/signature_green.png'" onmouseout="this.src='./images/signature.png'" class="logo" alt="logo"/></a>
-                    <ul class="nav-list">
-                        <!--<li><a href="./index.html">Home</a></li>
-                        <li><a href="./recent-work.html">Recent Work</a></li>
-                        <li><a href="mailto:kirsten.barrett25@gmail.com">kirsten.barrett25@gmail.com</a></li>-->
-                        <li><a href="#contact" class="nav-button">Contact Me</a></li>
-                    </ul>
-                    <!--<a class="icon" onclick="responsiveNav()">
-                        <i class="ri-menu-line nav-burger"></i>
-                        <i class="ri-close-line nav-close"></i>
-                    </a>-->
-            </nav>
-        </header>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><h1 class="logo">Kirsten Barrett</h1></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="./van-gogh-portfolio.html">Case Studies</a></li>
+                    <li class="mobile-only"><a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener">Resume</a></li>
+                    <li for="check"><a href="#contact" onclick="menuClose()" class="anchor">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>
+            </ul>
+        </nav>
+        <hr class="nav-hr">
+    </header>
+        
+    <main>
+        <section> 
+            <div class="first about-me">
+                <div class="grid-1-2">
+                    <div>
+                        <img src="./images/headshot_square.jpg" alt="Kirsten Barrett" class="profile-pic">
+                    </div>
+    
+                    <div>
+                        <img src="./images/signature_green.png" alt="signature" class="signature">
+                        <div class="type-container">
+                            <div id="typed-strings">
+                                <h2>Web Developer</h2>
+                                <h2>Web Designer</h2>
+                            </div>
+                            <span id="auto-type"></span>
+                        </div>
+                        <p>
+                            I am an experienced Web Developer with a strong background in visual design and a talent for technical coding and problem-solving. Over the years, I have practiced various computer languages, software programs, and design techniques in both work and play which have positioned me as a well-rounded developer eager to take on meaningful projects and collaborations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section class="about-me wrapper">
+        <section id="recent-work" class="theme-default-opposite">
+            <h2 class="recent-work-title">Recent Projects</h2>
             <div>
-                <img class="about-img" src="./images/kirsten.jpeg" alt="Kirsten Barrett">
+
+                <div class="flex-box-proj">
+                    <div>
+                        <h3>Artist Portfolio Website</h3>
+                        <p class="proj-desc">
+                            This is a passion project meant to act as a sample of my work. It is a homepage demo of an artist portfolio website for the late Vincent van Gogh. Because of the copyright status of his work, I was able to have fun creating in lieu of legal agreements.
+                        </p>
+                        <a href="./van-gogh-portfolio.html" class="button theme-default-opposite">Case Study</a>
+                        <a href="https://kirsten-barrett.github.io/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Live Demo</a>
+                        <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Github Repo</a>
+                        <p class="specifications">Photoshop & Illustrator | HTML | CSS | JavaScript</p>
+                    </div>
+                    <a href="./van-gogh-portfolio.html">
+                        <div class="proj-img-div artist-portfolio-img"></div>
+                    </a>
+                </div>
+
+                <div class="flex-box-proj">
+                    <div>
+                        <h3>Travel Client Website</h3>
+                        <p class="proj-desc">This is a custom website I developed for a client who had just done a rebrand of their company. I worked closely with their designer to actualize their ideas and produce custom code.</p>
+                        <a href="https://cosmopolitours.com/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
+                        <p class="specifications">WordPress | Custom HTML & CSS | GoDaddy</p>
+                    </div>
+                    <div class="proj-img-div travel-client-img"></div>
+                </div>
+
+                <div class="flex-box-proj">
+                    <div>
+                        <h3>Service Client Website</h3>
+                        <p class="proj-desc">This is a website I planned and developed for a client after discussing their goals for design, functionality, and purpose of their site. I collaborated closely with stakeholders and provided thorough and frequent updates throughout the process.</p>
+                        <a href="https://saferhomesllc.com/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
+                        <p class="specifications">WordPress Theme & Plugins | Custom HTML & CSS</p>
+                    </div>
+                    <div class="proj-img-div mold-client-img"></div>
+                </div>
+
+                <div class="flex-box-proj">
+                    <div>
+                        <h3>Event Client Landing Page</h3>
+                        <p class="proj-desc">This is a landing page I designed and developed for a client to advertise their transportation services. This task involved balancing SEO content with images and other helpful user information to make a page that is equally as useful for humans as it is for search engine bots.</p>
+                        <a href="https://www.agendausa.com/kc/wedding-transportation/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
+                        <p class="specifications">Elementor | Content Design & Wireframing | Custom CSS</p>
+                    </div>
+                    <div class="proj-img-div event-client-img"></div>
+                </div>
+
+                <div class="flex-box-proj">
+                    <div>
+                        <h3>Service Client Landing Page</h3>
+                        <p class="proj-desc">This is a landing page I designed and developed for a client to advertise their water damage repair services. The goal of this page is lead generation and to share focused, quality information.</p>
+                        <a href="https://saferhomesllc.com/service/water-damage-restoration-repair/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
+                        <p class="specifications">Elementor | Content Design & Wireframing | Custom CSS</p>
+                    </div>
+                    <div class="proj-img-div water-client-img"></div>
+                </div>
+
+                <div class="flex-box-proj">
+                    <div>
+                        <h3>Website Theme Feature</h3>
+                        <p class="proj-desc">This is a feature I developed for my own personal use. It is a pop up that allows users to change the color theme of the website. I built an example website to display how it can be reusable as it only requires simple DOM manipulation.</p>
+                        <a href="https://kirsten-barrett.github.io/website-theme-changer/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Demo</a>
+                        <a href="https://github.com/kirsten-barrett/website-theme-changer" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
+                        <p class="specifications">JavaScript | HTML | CSS | Git | GitHub</p>
+                    </div>
+                    <div class="proj-img-div color-picker-img"></div>
+                </div>
+
+                <div class="flex-box-proj">
+                    <div>
+                        <h3>Developer Portfolio Website</h3>
+                        <p class="proj-desc">This is the website you are currently viewing. After a few iterations (and more to come), it acts as a home for my recent work. My goal was to utilize a simple design that mimics a resume. This was built entirely from scratch with HTML, CSS, and Vanilla JS.</p>
+                        <a href="#" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
+                        <p class="specifications">HTML | CSS | JavaScript | Git | GitHub</p>
+                    </div>
+                    <div class="proj-img-div developer-portfolio-img"></div>
+                </div>
+
             </div>
-            <div class="about-txt">
-                <h1>Kirsten Barrett</h1>
-                <p>I am an experienced Web Developer currently pursuing a certification in Full-Stack Software Engineering. I have a strong background in visual design and have combined these skills with a talent for technical coding and problem-solving. Over the years I have practiced various computer languages and software programs in both work and play which has positioned me as a well-rounded developer looking for meaningful projects and collaborations.</p>
-                <br><br>
-                <a class="button first-button" href="#contact">Contact Me</a>
+
+            <br>
+            <div class="btn-container">
+                <a href="https://kirstenbarrett.myportfolio.com/" target="_blank" rel="noopener" class="theme-default-opposite center-btn button">View My Project Archive</a>
             </div>
+            <br>
+            
         </section>
 
-        <section class="dark-bg">
-            <h2 class="recent-work">Recent Work</h2>
-            <div class="home-recent-work">
-                <div class="grid">
-                <div>
-                    <img src="./images/cosmos.jpg" alt="travel website" class="proj-img">
+        <section class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skills-slider">
+                    <div>
+                        <i class="fa-brands fa-html5"><p class="skills-text">HTML</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-css3-alt"><p class="skills-text">CSS</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-square-js"><p class="skills-text">JavaScript</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-git"><p class="skills-text">Git</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github"><p class="skills-text">GitHub</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-palette"><p class="skills-text">Adobe <br>Creative <br>Cloud</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-wordpress"><p class="skills-text">WordPress</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-shopify"><p class="skills-text">Shopify</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-webflow"><p class="skills-text">Webflow</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-figma"><p class="skills-text">Figma</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-searchengin"><p class="skills-text">SEO</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chart-simple"><p class="skills-text">Google <br>Analytics</p></i>
+                    </div>
                 </div>
-                <div>
-                    <h3>Travel Website</h3>
-                    <p class="proj-descr">This is a custom website I developed for a client who creates travel packages. I worked closely with their designer to actualize their ideas. I used WordPress along with custom code to complete this project from beginning to end.</p>
-                    <br>
-                    <a href="https://cosmopolitours.com/" target="_blank" rel="noopener" class="button black">Live Link</a>
-                    <br><br>
-                </div>
-                <div>
-                    <img src="./images/rosco.jpg" alt="random message generator" class="proj-img">
-                </div>
-                <div>
-                    <h3>Rosco's Adventure</h3>
-                    <p class="proj-descr">This is a video game developed with Unity that I completed as part of a team. My role on this team was Production Co-Lead. I created the storyboard and development workflow in addition to fixing any bugs as they arose. I also coordinated between the design and developement teams.</p>
-                    <br>
-                    <a href="https://jcv0013.itch.io/roscos-adventure" target="_blank" rel="noopener" class="button black">Play The Game</a><br>
-                    <a href="https://www.monrivergames.com/roscosadventurehome" target="_blank" rel="noopener" class="button black">More Information</a>
-                    <br><br>
-                </div>
-                <div>
-                    <img src="./images/portfolio-site.jpg" alt="portfolio website" class="proj-img">
-                </div>
-                <div>
-                    <h3>Portfolio Website</h3>
-                    <p class="proj-descr">You are currently viewing the first iteration of my portfolio website created from scratch with HTML, CSS, & JS. Although I plan to maintain a simple design, I am working on adding additional design elements, creating a dedicated recent work page, adding more user interactivity, and transferring additional projects to this site.</p>
-                    <br>
-                    <a href="https://github.com/kirsten-barrett/portfolio-site" target="_blank" rel="noopener" class="button black">GitHub Repo</a><br>
-                    <a href="#" class="button black">Live Link</a>
-                    <br><br>
-                </div>
-                <div>
-                    <img src="./images/random-message-proj.jpg" alt="random message generator" class="proj-img">
-                </div>
-                <div>
-                    <h3>Random Message Generator</h3>
-                    <p class="proj-descr">This project was practice using JS with HTML & CSS. The output displays today's date and generates a random message & ASCII face on each page load.</p>
-                    <br>
-                    <a href="https://github.com/kirsten-barrett/random-message" target="_blank" rel="noopener" class="button black">GitHub Repo</a><br>
-                    <a href="https://kirsten-barrett.github.io/random-message/" target="_blank" rel="noopener" class="button black">Live Link</a>
-                    <br><br>
-                </div>
-                </div>
-                <a href="https://kirstenbarrett.myportfolio.com/" target="_blank" rel="noopener" class="button black full-width">View Additional Work</a>
             </div>
+            <hr class="solid">
         </section>
 
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <div>
-                <a href="mailto:kirsten.barrett25@gmail.com" class="inline-icon"><i class="ri-mail-line"></i><p> kirsten.barrett25@gmail.com</p></a>
-                <br>
-                <a href="tel:2156883337" class="inline-icon"><i class="ri-phone-line"></i><p> (215) 688-3337</p></a>
-                <br><br><br>
-                <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener"><i class="ri-linkedin-box-fill social"></i></a>
-                <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener"><i class="ri-github-fill social"></i></a>
-                <br><br><br>
-                <center><a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener" class="button">View Kirsten's Resume</a></center>
-                <br><br>
-            </div>
-        </section>
+        <section id="contact">
+            <h2 class="contact-title">Contact</h2>
+            <div class="contact">
+                <div class="contact-box">
+                    <h3 class="center">Send me an email:</h3>
+                    <div class="btn-container">
+                        <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite center-btn" id="email-btn">kirsten.barrett25@gmail.com</a>
+                    </div>
+                    <h3 class="second-contact center">View my resume:</h3>
+                    <div class="btn-container">
+                        <a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Doc</a>
+                    </div>
+                </div>
 
-        <footer>
+                <div class="contact-box theme-default-opposite">
+                    <h3 class="center">Let's connect!</h3>
+                    <div class="icon-container">
+                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kirsten-barrett" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="solid">
+        </section>
+    </main>
+
+    <footer>
+        <section>
             <p>© 2024 KIRSTEN BARRETT</p>
-        </footer>
-    </body>
+        </section>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
+    <script src="./script/typeWriter.js"></script>
+    <script src="./script/emailButton.js"></script>
+    <script src="./script/responsiveMenu.js"></script>
+
+</body>
 </html>
