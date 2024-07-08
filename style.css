@@ -225,8 +225,8 @@ hr.nav-hr {
 }
 /*======== TYPING ==========*/
 .type-container {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
     margin: 20px 0px;
@@ -234,8 +234,8 @@ hr.nav-hr {
 }
 @media only screen and (max-width: 475px){
     .type-container {
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 2.8rem;
+        line-height: 2.8rem;
     }
 }
 .typed-cursor {
@@ -300,6 +300,10 @@ hr.nav-hr {
 .travel-client-img {
     background-image: url(./images/cosmos.jpg);
 }
+.travel-client-img-2 {
+    background-image: url(./images/travel-client-page.jpg);
+    background-position: top center;
+}
 .color-picker-img {
     background-image: url(./images/website-theme-changer.jpg);
     background-position: left;
@@ -310,6 +314,9 @@ hr.nav-hr {
 }
 @media only screen and (max-width: 1350px) {
     .developer-portfolio-img {
+        border: .25px solid #000;
+    }
+    .travel-client-img-2 {
         border: .25px solid #000;
     }
 }
