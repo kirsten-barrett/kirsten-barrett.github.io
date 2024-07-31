@@ -138,6 +138,16 @@ header {
     width: 100%;
     z-index: 5;
 }
+@media only screen and (min-device-width: 400px) 
+                   and (max-device-width: 800px) 
+                   and (orientation: landscape) {
+                    header {
+                        position: relative;
+                    }
+                    body {
+                        margin-top: 0px;
+                    }
+                   }
 nav {
     margin: 0 auto;
     padding-bottom: 10px;
@@ -302,6 +312,10 @@ hr.nav-hr {
     margin-bottom: 40px;
     color: #000;
     background-color: #fff;
+}
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100% !important;
 }
 .flex-box-proj h3 {
     margin-top: 20px;
