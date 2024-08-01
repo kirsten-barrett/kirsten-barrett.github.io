@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- end google fonts-->
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
     <title>Kirsten Barrett</title>
 </head>
 
@@ -21,8 +22,7 @@
                 <li><h1 class="logo">Kirsten Barrett</h1></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
-                    <li><a href="./van-gogh-portfolio.html">Case Studies</a></li>
-                    <li class="mobile-only"><a href="https://docs.google.com/document/d/1Xzb_F3U8Jeg_8rDY8kOMTEqfVrEZDWY2tJr8JdEaEuU/edit?usp=sharing" target="_blank" rel="noopener">Resume</a></li>
+                    <!--<li><a href="./van-gogh-portfolio.html">Case Studies</a></li>-->
                     <li for="check"><a href="#contact" onclick="menuClose()" class="anchor">Contact</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
                 </span>
@@ -34,7 +34,7 @@
         
     <main>
         <section> 
-            <div class="first about-me">
+            <div class="first">
                 <div class="grid-1-2">
                     <div>
                         <img src="./images/headshot_square.jpg" alt="Kirsten Barrett" class="profile-pic">
@@ -64,25 +64,10 @@
             <div>
                 <div class="flex-box-proj">
                     <div>
-                        <div class="proj-img-div mold-client-img"></div>
-                        <h3>Service Client Website</h3>
-                        <p class="proj-desc">This is a website I planned and developed for a client after discussing their goals for design, functionality, and purpose of their site. I collaborated closely with the company owner and provided thorough and frequent updates throughout the process.</p>
-                    
-                        <button type="submit" class="button theme-default-opposite" onclick="openSHSPopup()">Website Walkthrough</button>
-                        <div class="popup" id="SHSpopup">
-                            <button type="button" class="popup-close" onclick="closeSHSPopup()">x</button>
-                            <iframe src="https://www.youtube.com/embed/pSK3tIK1w5Q?si=4lIktUQFsrWHQsIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div> 
-
-                        <p class="specifications">Elementor | Content Design & Wireframing | Custom HTML & CSS</p>
-                    </div>
-                </div>
-
-                <div class="flex-box-proj">
-                    <div>
                         <div class="proj-img-div travel-client-img"></div>
                         <h3>Travel Client Website</h3>
-                        <p class="proj-desc">This is a custom website I developed for a client who had just done a rebrand of their company. I worked closely with their designer to actualize their ideas and produce custom code.</p>
+                        <p class="proj-desc">At my previous agency, I was given the opportunity to lead the development of a new website for a client who had just undergone a company rebrand. They needed a platform that would beautifully showcase their photography while providing a large quantity of key information to potential customers. Collaborating closely with their designer, I translated conceptual ideas into a fully functional, user-centric website that enhanced the client's online presence and effectively communicated their brand.
+                        </p>
                         
                         <button type="submit" class="button theme-default-opposite" onclick="openCOSPopup()">Website Walkthrough</button>
                         <div class="popup" id="COSpopup">
@@ -90,11 +75,38 @@
                             <iframe src="https://www.youtube.com/embed/Nkp3lhms5Yg?si=389_GxJHbbn8vZ6L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div> 
 
-                        <p class="specifications">WordPress | Custom HTML & CSS & JS | GoDaddy</p>
+                        <p class="specifications">HTML | CSS | JavaScript | Custom WordPress | GoDaddy</p>
                     </div>
                 </div>
 
                 <div class="flex-box-proj">
+                    <div>
+                        <div class="proj-img-div developer-portfolio-img"></div>
+                        <h3>Developer Portfolio Website</h3>
+                        <p class="proj-desc">This is the website you are currently viewing. After a few iterations (and more to come), it acts as a home for my recent work. My goal was to utilize a simple design that mimics a resume. This was built entirely from scratch with HTML, CSS, and Vanilla JS.</p>
+                        <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
+                        <p class="specifications">HTML | CSS | JavaScript | Git & GitHub | Wireframing & Web Design</p>
+                    </div>
+                </div>
+
+                <div class="flex-box-proj">
+                    <div>
+                        <div class="proj-img-div mold-client-img"></div>
+                        <h3>Service Client Website</h3>
+                        <p class="proj-desc">This client came to me looking to redo and vastly expand their current one-page website. I planned and developed this site from the ground up after in-depth discussions with the client to understand their design vision, functional needs, and overall goals. Throughout the project, I maintained close collaboration with the company owner, providing regular updates to ensure the final product aligned perfectly with their expectations.
+                        </p>
+                    
+                        <button type="submit" class="button theme-default-opposite" onclick="openSHSPopup()">Website Walkthrough</button>
+                        <div class="popup" id="SHSpopup">
+                            <button type="button" class="popup-close" onclick="closeSHSPopup()">x</button>
+                            <iframe src="https://www.youtube.com/embed/pSK3tIK1w5Q?si=4lIktUQFsrWHQsIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div> 
+
+                        <p class="specifications">Custom HTML & CSS | Elementor | Wireframing & Web Design</p>
+                    </div>
+                </div>
+
+                <!--<div class="flex-box-proj">
                     <div>
                         <div class="proj-img-div artist-portfolio-img"></div>
                         <h3>Artist Portfolio Website</h3>
@@ -104,9 +116,9 @@
                         <a href="./van-gogh-portfolio.html" class="button theme-default-opposite">Case Study</a>
                         <a href="https://kirsten-barrett.github.io/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Live Demo</a>
                         <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Github Repo</a>
-                        <p class="specifications">HTML | CSS | JavaScript | Photoshop & Illustrator</p>
+                        <p class="specifications">HTML | CSS | JavaScript | Photoshop & Illustrator | Wireframing & Web Design</p>
                     </div>
-                </div>
+                </div>-->
 
                 <div class="flex-box-proj">
                     <div>
@@ -120,17 +132,7 @@
                             <iframe src="https://www.youtube.com/embed/C8S7T2e1Lpc?si=0-4pnwIYE4GI10r1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div> 
 
-                        <p class="specifications">Elementor | Content Design & Wireframing | Custom CSS</p>
-                    </div>
-                </div>
-
-                <div class="flex-box-proj">
-                    <div>
-                        <div class="proj-img-div developer-portfolio-img"></div>
-                        <h3>Developer Portfolio Website</h3>
-                        <p class="proj-desc">This is the website you are currently viewing. After a few iterations (and more to come), it acts as a home for my recent work. My goal was to utilize a simple design that mimics a resume. This was built entirely from scratch with HTML, CSS, and Vanilla JS.</p>
-                        <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
-                        <p class="specifications">HTML | CSS | JavaScript | Git & GitHub</p>
+                        <p class="specifications">Custom CSS | WordPress | Wireframing & Web Design</p>
                     </div>
                 </div>
 
@@ -138,10 +140,10 @@
                     <div>
                         <div class="proj-img-div color-picker-img"></div>
                         <h3>Website Theme Feature</h3>
-                        <p class="proj-desc">This is a feature I developed for my own personal use. It is a pop up that allows users to change the color theme of the website.</p>
+                        <p class="proj-desc">This is a feature I developed for my own personal use. It is a pop up that allows users to change the color theme of the website using Vanilla JS.</p>
                         <a href="https://kirsten-barrett.github.io/website-theme-changer/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Demo</a>
                         <a href="https://github.com/kirsten-barrett/website-theme-changer" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
-                        <p class="specifications">JavaScript | HTML | CSS | Git & GitHub</p>
+                        <p class="specifications">JavaScript | Git & GitHub</p>
                     </div>
                 </div>
 
@@ -149,7 +151,7 @@
 
             <br>
             <div class="btn-container">
-                <a href="https://kirstenbarrett.myportfolio.com/" target="_blank" rel="noopener" class="theme-default-opposite center-btn button">View My Project Archive</a>
+                <a href="https://kirstenbarrett.myportfolio.com/" target="_blank" rel="noopener" class="theme-default-opposite center-btn button">Learn More About My Background</a>
             </div>
             <br>
             
@@ -169,6 +171,9 @@
                         <i class="fa-brands fa-square-js"><p class="skills-text">JavaScript</p></i>
                     </div>
                     <div>
+                        <i class="fa-brands fa-react"><p class="skills-text">React</p></i>
+                    </div>
+                    <div>
                         <i class="fa-brands fa-git"><p class="skills-text">Git</p></i>
                     </div>
                     <div>
@@ -185,9 +190,6 @@
                     </div>
                     <div>
                         <i class="fa-brands fa-figma"><p class="skills-text">Figma</p></i>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-webflow"><p class="skills-text">Webflow</p></i>
                     </div>
                     <div>
                         <i class="fa-brands fa-searchengin"><p class="skills-text">SEO</p></i>
