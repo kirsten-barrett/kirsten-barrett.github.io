@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the meta description.">
+    <meta name="description" content="Kirsten Barrett is an experienced Web Developer and UX Designer with a background in visual design and technical problem-solving. Explore my portfolio to see the diverse range of skills and expertise I bring to each project.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
+    <title>Kirsten Barrett | Web Developer | UX Designer</title>
+
+    <!-- Google Tag  Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KTD28MV6');</script>
+    <!-- End Google Tag Manager -->
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- end google fonts-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
-    <title>Kirsten Barrett</title>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTD28MV6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+<main>
     <header>
         <nav>
             <ul class="nav-bar">
-                <li><h1 class="logo">Kirsten Barrett</h1></li>
+                <li><a href="./index.html"><h1 class="logo">Kirsten Barrett</h1></a></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
                     <li><a href="./van-gogh-portfolio.html">Case Studies</a></li>
@@ -32,34 +47,36 @@
         </nav>
         <hr class="nav-hr">
     </header>
-        
-    <main>
-        <section> 
-            <div class="first">
-                <div class="grid-1-2">
-                    <div>
-                        <img src="./images/headshot_square.jpg" alt="Kirsten Barrett" class="profile-pic">
-                    </div>
-    
-                    <div>
-                        <img src="./images/signature_green.png" alt="signature" class="signature">
-                        <div class="type-container">
-                            <div id="typed-strings">
-                                <h2>Developer</h2>
-                                <h2>Designer</h2>
-                            </div>
-                            <span id="auto-type"></span>
+
+    <section id="about"> 
+        <div class="full-height vert-center">
+            <div class="hero-flexbox">
+                <div>
+                    <img src="./images/headshot_square.jpg" alt="Kirsten Barrett" class="profile-pic">
+                </div>
+
+                <div class="fh-center">
+                    <img src="./images/signature_green.png" alt="signature" class="signature">
+                    <div class="type-container">
+                        <div id="typed-strings">
+                            <h2>Designer</h2>
+                            <h2>Developer</h2>
                         </div>
-                        <p class="intro-subhead">for web and screens</p>
-                        <br>
-                        <p class="intro-txt">
-                            I am an experienced developer & designer with an extensive background in visual design and a talent for technical problem-solving. My diverse experience has shaped me into a well-rounded developer eager to take on meaningful projects and collaborations. 
-                        </p>
+                        <span id="auto-type"></span>
                     </div>
+                    <p class="intro-subhead">for web and screens</p>
+                    <br>
+                    <p class="intro-txt">
+                        I am an experienced designer & developer with an extensive background in visual design and a talent for technical problem-solving. My diverse experience has shaped me into a well-rounded professional eager to take on meaningful projects and collaborations. 
+                    </p>
+                    <br><br>
+                    <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite">SEND ME AN EMAIL</a>
                 </div>
             </div>
-        </section>
-
+            <a href="#recent-work"><i class="fa-solid fa-chevron-down down-arrow bounce"></i></a>
+        </div>
+    </section>
+    
         <section id="recent-work" class="theme-default-opposite">
             <h2 class="recent-work-title">Recent Projects</h2>
             <div>
@@ -81,7 +98,7 @@
                     <div>
                         <div class="proj-img-div travel-client-img"></div>
                         <h3>Travel Client Website</h3>
-                        <p class="proj-desc">At my previous agency, I was given the opportunity to lead the development of a new website for a client who had just undergone a company rebrand. They needed a platform that would beautifully showcase their photography while providing a large quantity of key information to potential customers. Collaborating closely with their designer, I translated conceptual ideas into a fully functional, user-centric website that enhanced the client's online presence and effectively communicated their brand.
+                        <p class="proj-desc">At my previous agency, I was given the opportunity to lead the development of a new website for a client who had just undergone a company rebrand. They needed a platform that would beautifully showcase their photography while providing a large quantity of key information to potential customers. Collaborating closely with their designer, I translated conceptual ideas into a fully functional, user-centric website that enhanced the client's online presence, effectively communicated their brand, and simplified .
                         </p>
                         
                         <button type="submit" class="button theme-default-opposite" onclick="openCOSPopup()">Website Walkthrough</button>
@@ -160,7 +177,7 @@
             
         </section>
 
-        <section class="skills-section">
+        <section id="skills">
             <h2>My Skills</h2>
             <div class="skills">
                 <div class="skills-slider">
@@ -174,16 +191,16 @@
                         <i class="fa-brands fa-square-js"><p class="skills-text">JavaScript</p></i>
                     </div>
                     <div>
-                        <i class="fa-brands fa-react"><p class="skills-text">React</p></i>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-git"><p class="skills-text">Git</p></i>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-github"><p class="skills-text">GitHub</p></i>
+                        <i class="fa-brands fa-figma"><p class="skills-text">Figma</p></i>
                     </div>
                     <div>
                         <i class="fa-solid fa-palette"><p class="skills-text">Adobe <br>Creative <br>Cloud</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-searchengin"><p class="skills-text">SEO</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chart-simple"><p class="skills-text">Google <br>Analytics</p></i>
                     </div>
                     <div>
                         <i class="fa-brands fa-wordpress"><p class="skills-text">WordPress</p></i>
@@ -192,14 +209,12 @@
                         <i class="fa-brands fa-shopify"><p class="skills-text">Shopify</p></i>
                     </div>
                     <div>
-                        <i class="fa-brands fa-figma"><p class="skills-text">Figma</p></i>
+                        <i class="fa-brands fa-git"><p class="skills-text">Git</p></i>
                     </div>
                     <div>
-                        <i class="fa-brands fa-searchengin"><p class="skills-text">SEO</p></i>
+                        <i class="fa-brands fa-github"><p class="skills-text">GitHub</p></i>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-chart-simple"><p class="skills-text">Google <br>Analytics</p></i>
-                    </div>
+                    
                 </div>
             </div>
             <hr class="solid">

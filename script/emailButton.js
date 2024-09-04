@@ -1,6 +1,6 @@
 const emailBtn = document.querySelector('#email-btn');
 
-if (window.screen.width < 375) {
+if (window.screen.width < 470) {
     emailBtn.innerHTML = "kirsten.barrett25<br>@gmail.com";
 }
 

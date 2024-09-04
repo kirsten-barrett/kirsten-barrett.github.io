@@ -14,21 +14,26 @@
 }
 body {
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 10vh;
     font-size: 18px;
     font-family: Avenir, sans-serif;
     overflow-x: hidden;
 }
 h1 {
     text-transform: uppercase;
+    font-family: "Red Hat Display", sans-serif;
 }
 h2 {
     text-transform: uppercase;
     font-size: 1.8rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
 }
 h3 {
     text-transform: uppercase;
     margin-bottom: 30px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
 }
 .center {
     text-align: center;
@@ -36,37 +41,19 @@ h3 {
 section {
     margin: 0 auto;
 }
-@media only screen and (min-width: 1351px) {
+@media only screen and (min-width: 1451px) {
     section, nav, hr.nav-hr {
-        width: 60%;
+        width: 70%;
     }
 }
-@media screen and (max-width: 1350px) and (min-width: 951px) {
+@media screen and (max-width: 1450px) and (min-width: 1201px) {
     section, nav, hr.nav-hr {
         width: 80%;
     }
 }
-@media only screen and (max-width: 950px) and (min-width: 50px) {
-    section, nav, hr.nav-hr, .profile-pic {
+@media only screen and (max-width: 1200px) and (min-width: 50px) {
+    section, nav, hr.nav-hr {
         width: 90%;
-    }
-}
-.grid-1-2  {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 40px;
-    grid-row-gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-@media only screen and (max-width: 845px) {
-    .grid-1-2 {
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 0px;
-        justify-items: center;
-        align-items: center;
-        text-align: center;
     }
 }
 hr.solid {
@@ -79,18 +66,21 @@ i {
     font-size: 4rem;
 }
 button {
-    font-family: Avenir, sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     font-weight: 400;
 }
 button:hover {
     cursor: pointer;
 }
 .button {
-    border: 1px solid #9dca87;
-    background-color: #9dca87;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #80b467;
+    background-color: #80b467;
     border-radius: 50px;
     padding: 0.7rem 2rem;
-    font-size: 1.1rem;
+    font-size: 18px;
     text-align: center;
     display: inline;
     transition: all .2s;
@@ -128,13 +118,26 @@ a {
     margin-left: 2rem;
     list-style-type: lower-roman;
 }
+.full-height {
+    min-height: 90vh;
+}
+.vert-center {
+    display: grid;
+    place-items: center;
+}
+.fh-center {
+    align: center;
+}
+#contact, #recent-work {
+    scroll-margin-top: 10vh;
+}
 /*============ HEADER ===========*/
 header {
     position: fixed;
     background-color: #fff;
     align-content: center;
     top: 0px;
-    height: 100px;
+    height: 10vh;
     width: 100%;
     z-index: 5;
 }
@@ -165,6 +168,7 @@ hr.nav-hr {
     margin: 0 auto;
 }
 .logo {
+    font-family: "Red Hat Display", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
@@ -172,6 +176,7 @@ hr.nav-hr {
 }
 .menu {display: flex;}
 .menu li a {
+    font-family: "Red Hat Display", sans-serif;
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -232,44 +237,84 @@ hr.nav-hr {
     /*#check:checked ~ .menu {right: 0;}*/
 }
 /*============ ABOUT ME ==============*/
-.first{
-    padding: 60px 0px;
+.hero-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    margin-top: 60px;
 }
 .profile-pic {
-    max-width: 325px;
-    min-width: 300px;
+    max-width: 425px;
+    max-height: 425px;
     border-radius: 50px;
 }
+/*
+.first{
+    padding: 60px 0px;
+ }*/
 .signature {
     width: 300px;
 }
-.intro-subhead {
-    color:#9dca87; 
-    font-size: 1.3rem; 
-    font-weight: 700; 
-    margin-top: -20px;
-}
-.intro-txt {
-    font-size: 16px;
-}
-/*======== TYPING ==========*/
 .type-container {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    font-family: "Red Hat Display", sans-serif;
+    letter-spacing: 0.4rem;
     line-height: 3.5rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     margin: 20px 0px;
-    color: #9dca87;
-}
-@media only screen and (max-width: 475px){
-    .type-container {
-        font-size: 2.8rem;
-        line-height: 2.8rem;
-    }
+    color: #80b467;
 }
 .typed-cursor {
     color: #9dca87;
     padding-left: 5px;
+}
+.intro-subhead {
+    font-family: "Red Hat Display", sans-serif;
+    color:#80b467; 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    margin-top: -10px;
+}
+.down-arrow {
+    font-size: 2rem;
+    text-align: center;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+.bounce {
+    animation: bounce 1s 5 5s;
+}
+
+/* ABOUT SECTION MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+    .hero-flexbox {
+        flex-direction: column;
+        text-align: center;
+        margin: 30px 0px;
+    }
+    .profile-pic {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .type-container {
+        font-size: 3rem;
+    }
+    .signature {
+        width: 250px;
+    }
+    i.down-arrow {
+        display: none;
+    }
 }
 /*============= RECENT WORK ===============*/
 #recent-work {
@@ -277,7 +322,7 @@ hr.nav-hr {
 }
 @media only screen and (min-width: 1396px) {
     #recent-work {
-        padding: 60px 20%;
+        padding: 60px 15%;
     }
 }
 @media screen and (max-width: 1395px) and (min-width: 951px) {
@@ -372,7 +417,7 @@ iframe {
     }
 }
 /*======== MY SKILLS ==========*/
-.skills-section {
+#skills {
     margin-top: 60px;
 }
 .skills {
@@ -402,9 +447,6 @@ iframe {
     font-family: Avenir, sans-serif;
 }
 /*============== CONTACT =================*/
-#contact {
-    scroll-margin-top: 120px;
-}
 .contact-title {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -462,6 +504,7 @@ a > i:hover {
 /*============= FOOTER =============*/
 footer {
     margin: 20px 0px;
+    font-family: "Red Hat Display", sans-serif;
 }
 
 
@@ -482,7 +525,7 @@ footer {
     column-gap: 20px;
     row-gap: 20px;
     padding: 50px 0px;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 .case-img-div {
