@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the meta description.">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
+    <title>Developer Portfolio Website Case Study | UX Design & Web Development | Kirsten Barrett</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- end google fonts-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C69YSC6HX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2C69YSC6HX');
+    </script>
+    <!-- Google Tag  Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KTD28MV6');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTD28MV6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="./index.html">Kirsten Barrett</a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li for="check"><a href="#contact" onclick="menuClose()" class="anchor">Contact</a></li>
+                    <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener">GitHub</a></li>
+                    <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>
+            </ul>
+        </nav>
+        <hr class="nav-hr">
+    </header>
+        
+    <main class="portfolio-site-page case-study-page">
+        <div class="dark-bg">
+            <section> 
+                <div class="intro-section">
+                    <div>
+                        <p>UX/UI Design & Full-Stack Web Development</p>
+                        <h1>Portfolio Website</h1>
+                        <br>
+                        <p>The website you are currently viewing is my personal portfolio, designed and developed entirely from scratch using HTML, CSS, and JavaScript. The site serves as a digital resume and a platform to showcase my recent work. My aim was to create a simple, clean design inspired by the structure of a traditional resume, while ensuring the site was visually engaging and easy to navigate. This project has gone through several iterations to refine both the design and functionality, and I plan to continue evolving it as I add more projects, content and features.</p>
+                    </div>
+                    <div>
+                        <br>
+                        <p class="objectives">Objectives:</p>
+                        <div class="list">
+                            <ul>
+                                <li>Design and implement a fully-responsive and user-friendly home for my work</li>
+                                <li>Show off my personal style & how that can be translated to working with clients or at a company</li>
+                                <li>Provide a simple UI that promotes site exploration and user engagement</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex-btns">
+                        <a href="./index.html" class="theme-default-opposite button">view the homepage</a>
+                        <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="theme-default-opposite button">github repository</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div>
+            <div class="prototyping case-study-grid">
+                <div class="grid-text flex-text">
+                    <h2>Ideation & <br>Wireframing</h2>
+                    <p>My primary goal was to create a user-centric, minimalistic design that effectively communicated my professional experience and skills, while maintaining a clean, resume-like format. I wanted the site to be intuitive and easy to navigate, ensuring that potential employers and collaborators could quickly access key information about my work and background.</p>
+                    <br>
+                    <h3>Necessities:</h3>
+                    <div class="list">
+                        <ul>
+                            <li>display projects</li>
+                            <li>display 'about me' and key skills</li>
+                            <li>direct users to connect with me</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-imgs double-img">
+                    <img src="./images/dev_portfolio_wireframe1.jpg" alt="figma wireframe">
+                    <img src="./images/dev_portfolio_wireframe2.jpg" alt="UX/UI wireframe">
+                </div>
+            </div>
+
+            <div class="styling case-study-grid-reverse dark-bg">
+                <div class="grid-imgs double-img">
+                    <img src="./images/developer_portfolio_styleguide.jpg" alt="UX design styleguide">
+                    <img src="./images/dev_portfolio_style2.jpg" alt="website prototype">
+                </div>
+                <div class="grid-text">
+                    <div class="flex-text">
+                        <h2>Style</h2>
+                        <p>I aimed for a simple, minimalist style to emphasize the nature of my work rather than the portfolio itself. The initial layout was designed around the time I updated my resume, drawing inspiration from its distinct and natural flow of information. For the color scheme, I chose black, white, and a single accent color to maintain a modern, clean, and easily readable aesthetic.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bringing-tog case-study-grid">
+                <div class="grid-text flex-text">
+                    <h2>Prototyping, Development, & Interactivity</h2>
+                    <p>As the developer, my focus was on building the site from the ground up using only HTML, CSS, and Vanilla JavaScript. By not relying on any frameworks or libraries, I was able to maintain full control over the site's structure and performance, while keeping the codebase lean and efficient.</p>
+                    <br>
+                    <p>Using HTML, I structured the content to ensure a logical hierarchy that search engines could easily parse for SEO purposes. I applied custom CSS to handle the styling, using Flexbox and Grid for a responsive, consistent layout across devices. I then utilized JavaScript to add interactivity and perfect device responsiveness.</p>
+                </div>
+                <div class="grid-imgs double-img">
+                    <img src="./images/dev-portfolio-mobile.jpg" alt="mobile view">
+                    <img src="./images/dev-portfolio-desktop.jpg" alt="desktop view">
+                </div>
+            </div>
+        </div> 
+
+    <div class="final-section dark-bg">
+        <section> 
+            <div>
+                <div>
+                    <h2>Final Outcome</h2>
+                    <br>
+                    <p>The result is a clean, efficient, and professional portfolio site that functions as both a resume and a showcase of my work. The simple design highlights the content without distracting from the message, while the underlying code ensures that the site is responsive, repeatable, and easy to maintain. Through ongoing iterations, this website will continue to evolve, reflecting my growth as both a web developer and UX designer.</p>
+                </div>
+                
+                <div class="flex-btns">
+                    <a href="./index.html" class="theme-default-opposite button">view the homepage</a>
+                    <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="theme-default-opposite button">github repository</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</main>
+
+
+    <br><br>
+        <section id="contact">
+            <h2 class="contact-title">Contact</h2>
+            <div class="contact">
+                <div class="contact-box">
+                    <h3 class="center">Send me an email:</h3>
+                    <div class="btn-container">
+                        <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite center-btn" id="email-btn">kirsten.barrett25@gmail.com</a>
+                    </div>
+                    <h3 class="second-contact center">View my resume:</h3>
+                    <div class="btn-container">
+                        <a href="https://docs.google.com/document/d/1fFSma6sPc6-S8qpntv7id4h_cFBvUX5tXtZoe1NO5m4/edit?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Doc</a>
+                    </div>
+                </div>
+
+                <div class="contact-box theme-default-opposite">
+                    <h3 class="center">Let's connect!</h3>
+                    <div class="icon-container">
+                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="solid">
+        </section>
+
+        <footer>
+            <section>
+                <div class="footer-text">
+                    <p>© 2024 Kirsten Barrett</p>
+                    <p><a href="./sitemap.html">Sitemap</a></p>
+                </div>
+            </section>
+        </footer>
+
+    <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
+    <script src="./script/emailButton.js"></script>
+    <script src="./script/responsiveMenu.js"></script>
+
+</body>
+</html>

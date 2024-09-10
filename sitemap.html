@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kirsten Barrett is an experienced Web Developer and UX Designer with a background in visual design and technical problem-solving. Explore her portfolio to see the diverse range of skills and expertise she brings to each project.">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
+    <title>Sitemap | Kirsten Barrett</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- end google fonts-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C69YSC6HX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2C69YSC6HX');
+    </script>
+    <!-- Google Tag  Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KTD28MV6');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTD28MV6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+<main>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="./index.html">Kirsten Barrett</a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li for="check"><a href="#contact" onclick="menuClose()" class="anchor">Contact</a></li>
+                    <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener">GitHub</a></li>
+                    <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>
+            </ul>
+        </nav>
+        <hr class="nav-hr">
+    </header>
+
+    <br><br>
+
+    <section>
+        <h1>Sitemap</h1>
+        <br>
+        <ul class="sitemap-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li class="indent"><a href="./artist-portfolio.html">Artist Portfolio Website</a></li>
+            <li class="indent"><a href="./developer-portfolio.html">Developer Portfolio Website</a></li>
+            <li class="indent"><a href="./service-client.html">Service Client Website</a></li>
+            <li class="indent"><a href="./travel-client.html">Travel Client Website</a></li>
+        </ul>
+
+        <br><br>
+
+        <hr class="solid">
+
+    </section>
+
+        <section id="contact">
+            <h2 class="contact-title">Contact</h2>
+            <div class="contact">
+                <div class="contact-box">
+                    <h3 class="center">Send me an email:</h3>
+                    <div class="btn-container">
+                        <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite center-btn" id="email-btn">kirsten.barrett25@gmail.com</a>
+                    </div>
+                    <h3 class="second-contact center">View my resume:</h3>
+                    <div class="btn-container">
+                        <a href="https://docs.google.com/document/d/1fFSma6sPc6-S8qpntv7id4h_cFBvUX5tXtZoe1NO5m4/edit?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Doc</a>
+                    </div>
+                </div>
+
+                <div class="contact-box theme-default-opposite">
+                    <h3 class="center">Let's connect!</h3>
+                    <div class="icon-container">
+                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="solid">
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <div class="footer-text">
+                <p>© 2024 Kirsten Barrett</p>
+                <p><a href="./sitemap.html">Sitemap</a></p>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
+    <script src="./script/emailButton.js"></script>
+    <script src="./script/responsiveMenu.js"></script>
+
+</body>
+</html>

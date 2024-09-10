@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kirsten Barrett is an experienced Web Developer and UX Designer with a background in visual design and technical problem-solving. Explore my portfolio to see the diverse range of skills and expertise I bring to each project.">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Kirsten Barrett is an experienced Web Developer and UX Designer with a background in visual design and technical problem-solving. Explore her portfolio to see the diverse range of skills and expertise she brings to each project.">
+    <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
     <title>Kirsten Barrett | Web Developer | UX Designer</title>
-
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- end google fonts-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C69YSC6HX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2C69YSC6HX');
+    </script>
     <!-- Google Tag  Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -15,13 +27,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KTD28MV6');</script>
     <!-- End Google Tag Manager -->
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- end google fonts-->
 </head>
 
 <body>
@@ -31,17 +36,17 @@
     <!-- End Google Tag Manager (noscript) -->
 
 <main>
+
     <header>
         <nav>
             <ul class="nav-bar">
                 <li><a href="./index.html"><h1 class="logo">Kirsten Barrett</h1></a></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
-                    <li><a href="./van-gogh-portfolio.html">Case Studies</a></li>
-                    <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
                     <li for="check"><a href="#contact" onclick="menuClose()" class="anchor">Contact</a></li>
-                    <!--<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>-->
+                    <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener">GitHub</a></li>
+                    <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener">LinkedIn</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>
@@ -84,44 +89,13 @@
             <div>
                 <div class="flex-box-proj">
                     <div>
-                        <div class="proj-img-div artist-portfolio-img"></div>
-                        <h3>Artist Portfolio Website</h3>
-                        <p class="proj-desc">
-                            This is a passion project meant to act as a sample of my work *in progress.* It is a homepage demo of an artist portfolio website for the late Vincent van Gogh. Because of the copyright status of his work, I was able to have fun creating in lieu of legal agreements.
-                        </p>
-                        <a href="./van-gogh-portfolio.html" class="button theme-default-opposite">Case Study</a>
-                        <a href="https://kirsten-barrett.github.io/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Live Demo</a>
-                        <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Github Repo</a>
-                        <p class="specifications">HTML | CSS | JavaScript | Photoshop | Illustrator | Wireframing | Web Design</p>
-                    </div>
-                </div>
-                
-                <div class="flex-box-proj">
-                    <div>
-                        <div class="proj-img-div travel-client-img"></div>
-                        <h3>Travel Client Website</h3>
-                        <p class="proj-desc">At my previous agency, I was given the opportunity to lead the development of a new website for a client who had just undergone a company rebrand. They needed a platform that would beautifully showcase their photography while providing a large quantity of key information to potential customers. Collaborating closely with their designer, I translated conceptual ideas into a fully functional, user-centric website that enhanced the client's online presence, effectively communicated their brand, and simplified .
-                        </p>
-                        
-                        <button type="submit" class="button theme-default-opposite" onclick="openCOSPopup()">Website Walkthrough</button>
-                        <div class="popup" id="COSpopup">
-                            <button type="button" class="popup-close" onclick="closeCOSPopup()">x</button>
-                            <iframe src="https://www.youtube.com/embed/Nkp3lhms5Yg?si=389_GxJHbbn8vZ6L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <br><br>
-                            <p>This video has been sped up for your convenience. Please feel free to adjust the speed to your liking.</p>
-                        </div> 
-
-                        <p class="specifications">HTML | CSS | JavaScript | Custom WordPress | GoDaddy</p>
-                    </div>
-                </div>
-
-                <div class="flex-box-proj">
-                    <div>
                         <div class="proj-img-div developer-portfolio-img"></div>
                         <h3>Developer Portfolio Website</h3>
-                        <p class="proj-desc">This is the website you are currently viewing. After a few iterations (and more to come), it acts as a home for my recent work. My goal was to utilize a simple design that mimics a resume. This was built entirely from scratch with HTML, CSS, and Vanilla JS.</p>
-                        <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
-                        <p class="specifications">HTML | CSS | JavaScript | Git & GitHub | Wireframing & Web Design</p>
+                        <p class="proj-desc">
+                            This website serves as a dynamic showcase of my recent work, thoughtfully designed and developed from the ground up using HTML, CSS, and JavaScript. Through several iterations — with more improvements to come — I crafted a streamlined, resume-inspired layout that emphasizes clarity and professionalism. Designed and built entirely from scratch, the site reflects my commitment to clean design and functional precision.</p>
+                        <a href="./developer-portfolio.html" class="button theme-default-opposite">Case Study</a>
+                        <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
+                        <p class="specifications">Wireframing & Web Design | HTML | CSS | JavaScript | Git & GitHub</p>
                     </div>
                 </div>
 
@@ -129,20 +103,37 @@
                     <div>
                         <div class="proj-img-div mold-client-img"></div>
                         <h3>Service Client Website</h3>
-                        <p class="proj-desc">This client came to me looking to redo and vastly expand their current one-page website. I planned and developed this site from the ground up after in-depth discussions with the client to understand their design vision, functional needs, and overall goals. Throughout the project, I maintained close collaboration with the company owner, providing regular updates to ensure the final product aligned perfectly with their expectations.
-                        </p>
-                    
-                        <button type="submit" class="button theme-default-opposite" onclick="openSHSPopup()">Website Walkthrough</button>
-                        <div class="popup" id="SHSpopup">
-                            <button type="button" class="popup-close" onclick="closeSHSPopup()">x</button>
-                            <iframe src="https://www.youtube.com/embed/pSK3tIK1w5Q?si=4lIktUQFsrWHQsIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div> 
-
-                        <p class="specifications">Custom HTML & CSS | Elementor | Wireframing & Web Design</p>
+                        <p class="proj-desc">This client came to me looking to redo and vastly expand their current one-page website. I planned and developed this site from the ground up after in-depth discussions with the client to understand their design vision, functional needs, and overall goals. Throughout the project, I maintained close collaboration with the company owner, providing regular updates to ensure the final product aligned perfectly with their expectations.</p>
+                        <a href="./service-client.html" class="button theme-default-opposite">Case Study</a>
+                        <p class="specifications">Custom HTML & CSS | Elementor & WordPress | Wireframing & Web Design</p>
+                    </div>
+                </div>
+                
+                <div class="flex-box-proj">
+                    <div>
+                        <div class="proj-img-div travel-client-img"></div>
+                        <h3>Travel Client Website</h3>
+                        <p class="proj-desc">At my previous agency, I was given the opportunity to lead the development of a new website for a client who had just undergone a company rebrand. They needed a platform that would beautifully showcase their photography while providing a large quantity of key information to potential customers. Collaborating closely with their designer, I translated conceptual ideas into a fully functional, user-centric website that enhanced the client's online presence, effectively communicated their brand, and simplified.</p>
+                        <a href="./travel-client.html" class="button theme-default-opposite">Case Study</a>
+                        <p class="specifications">Custom HTML & CSS | Elementor & WordPress | Website Architecture Design</p>
                     </div>
                 </div>
 
                 <div class="flex-box-proj">
+                    <div>
+                        <div class="proj-img-div artist-portfolio-img"></div>
+                        <h3>Artist Portfolio Website</h3>
+                        <p class="proj-desc">
+                            This is a passion project meant to act as a sample of my work. It is a homepage demo of an artist portfolio website for the late Vincent van Gogh. Because of the copyright status of his work, I was able to have fun creating in lieu of legal agreements.
+                        </p>
+                        <a href="./artist-portfolio.html" class="button theme-default-opposite">Case Study</a>
+                        <a href="https://kirsten-barrett.github.io/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Live Demo</a>
+                        <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Github Repo</a>
+                        <p class="specifications">Wireframing & Web Design | HTML | CSS | JavaScript | Adobe Creative Cloud</p>
+                    </div>
+                </div>
+
+                <!--<div class="flex-box-proj">
                     <div>
                         <div class="proj-img-div event-client-img"></div>
                         <h3>Event Client Landing Page</h3>
@@ -167,15 +158,15 @@
                         <a href="https://github.com/kirsten-barrett/website-theme-changer" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
                         <p class="specifications">JavaScript | Git & GitHub</p>
                     </div>
-                </div>
+                </div>-->
 
             </div>
 
             <br>
-            <div class="btn-container">
+            <!--<div class="btn-container">
                 <a href="https://kirstenbarrett.myportfolio.com/" target="_blank" rel="noopener" class="theme-default-opposite center-btn button">Learn More About My Background</a>
             </div>
-            <br>
+            <br>-->
             
         </section>
 
@@ -199,6 +190,12 @@
                         <i class="fa-solid fa-palette"><p class="skills-text">Adobe <br>Creative <br>Cloud</p></i>
                     </div>
                     <div>
+                        <i class="fa-brands fa-git"><p class="skills-text">Git</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github"><p class="skills-text">GitHub</p></i>
+                    </div>
+                    <div>
                         <i class="fa-brands fa-searchengin"><p class="skills-text">SEO</p></i>
                     </div>
                     <div>
@@ -209,12 +206,6 @@
                     </div>
                     <div>
                         <i class="fa-brands fa-shopify"><p class="skills-text">Shopify</p></i>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-git"><p class="skills-text">Git</p></i>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-github"><p class="skills-text">GitHub</p></i>
                     </div>
                     
                 </div>
@@ -230,10 +221,10 @@
                     <div class="btn-container">
                         <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite center-btn" id="email-btn">kirsten.barrett25@gmail.com</a>
                     </div>
-                    <!--<h3 class="second-contact center">View my resume:</h3>
+                    <h3 class="second-contact center">View my resume:</h3>
                     <div class="btn-container">
-                        <a href="#" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Doc</a>
-                    </div>-->
+                        <a href="https://docs.google.com/document/d/1fFSma6sPc6-S8qpntv7id4h_cFBvUX5tXtZoe1NO5m4/edit?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Doc</a>
+                    </div>
                 </div>
 
                 <div class="contact-box theme-default-opposite">
@@ -250,7 +241,10 @@
 
     <footer>
         <section>
-            <p>© 2024 KIRSTEN BARRETT</p>
+            <div class="footer-text">
+                <p id="copyright">© 2024 Kirsten Barrett</p>
+                <p><a href="./sitemap.html">Sitemap</a></p>
+            </div>
         </section>
     </footer>
 
