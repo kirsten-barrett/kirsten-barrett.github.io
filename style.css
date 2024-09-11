@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 .theme-default {
     background-color: #fff;
     color: #000;
@@ -392,7 +395,7 @@ iframe {
     background-position: left;
 }
 .developer-portfolio-img {
-    background-image: url(./images/dev-portfolio.jpg);
+    background-image: url(./images/developer-portfolio.jpg);
     background-position: center;
     border: .25px solid #000;
 }
@@ -431,7 +434,7 @@ iframe {
 #skills {
     margin-top: 60px;
 }
-.skills {
+.skills-container {
     overflow-wrap: normal;
 }
 .skills-slider{
@@ -440,7 +443,7 @@ iframe {
     justify-content: space-between;
 }
 .skills-slider i {
-    margin: 3rem;
+    margin: 5rem;
     text-align: center;
 }
 @media only screen and (max-width: 1000px) {

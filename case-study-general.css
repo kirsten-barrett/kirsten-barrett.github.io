@@ -45,7 +45,7 @@
     display: flex;
     column-gap: 40px;
     row-gap: 40px;
-    align-items: end;
+    
 }
 .grid-text img {
     max-width: 450px;
@@ -65,8 +65,8 @@
     max-width: 700px;
     height: auto;
 }
-.prototyping img, .styling img {
-    border: 0.5px solid #000;
+.prototyping img, .styling img, .border {
+    border: 1px solid #000;
 }
 .prototyping, .styling, .bringing-tog {
     padding: 100px 40px;
