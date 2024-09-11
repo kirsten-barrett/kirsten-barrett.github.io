@@ -132,9 +132,6 @@ a {
     display: grid;
     place-items: center;
 }
-.fh-center {
-    align: center;
-}
 #contact, #recent-work {
     scroll-margin-top: 10vh;
 }
