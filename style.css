@@ -372,10 +372,6 @@ hr.nav-hr {
     color: #000;
     background-color: #fff;
 }
-iframe {
-    aspect-ratio: 16 / 9;
-    width: 100% !important;
-}
 .flex-box-proj h3 {
     margin-top: 20px;
 }
@@ -397,10 +393,9 @@ iframe {
 .developer-portfolio-img {
     background-image: url(./images/developer-portfolio.jpg);
     background-position: center;
-    border: .25px solid #000;
 }
 .mold-client-img {
-    background-image: url(./images/safer-home-services.png);
+    background-image: url(./images/safer-home-services.jpg);
     background-position: top center;
 }
 .event-client-img {
