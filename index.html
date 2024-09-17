@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
     <title>Kirsten Barrett | Web Developer | UX Designer</title>
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <!-- end google fonts-->
+    <!-- adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/bst4vhi.css">
+    <!-- end adobe fonts -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C69YSC6HX"></script>
     <script>
@@ -40,22 +38,22 @@
     <header>
         <nav>
             <ul class="nav-bar">
-                <li><a href="./index.html"><h1 class="logo">Kirsten Barrett</h1></a></li>
+                <li><a href="#"><h1 class="logo">Kirsten Barrett</h1></a></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li for="check"><a href="#contact" onclick="menuClose()" class="anchor">Contact</a></li>
-                    <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener">GitHub</a></li>
-                    <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="#recent-work" class="button theme-default">Projects</a></li>
+                    <li for="check"><a href="#contact" onclick="menuClose()" class="button theme-default anchor">Contact</a></li>
+                    <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="button theme-default">GitHub</a></li>
+                    <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="button theme-default">Linkedin</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>
             </ul>
         </nav>
-        <hr class="nav-hr">
     </header>
 
     <section id="about"> 
+        <hr class="solid">
         <div class="full-height vert-center">
             <div class="hero-flexbox">
                 <div>
@@ -72,108 +70,95 @@
                         <span id="auto-type"></span>
                     </div>
                     <p class="intro-subhead">for web and screens</p>
-                    <br>
                     <p class="intro-txt">
-                        I am an experienced designer and developer with an extensive background in visual design and a talent for technical problem-solving. My diverse experience has shaped me into a well-rounded professional eager to take on meaningful projects and collaborations. 
+                        I am an experienced designer and developer with an extensive background in visual design and a talent for technical problem-solving. My diverse experience has shaped me into a well-rounded professional, eager to take on meaningful projects and collaborations. 
                     </p>
-                    <br><br>
-                    <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite">SEND ME AN EMAIL</a>
+                    <br>
+                    <a href="#contact" class="button theme-default-opposite">Contact Me</a>
                 </div>
             </div>
             <a href="#recent-work"><i class="fa-solid fa-chevron-down down-arrow bounce"></i></a>
         </div>
     </section>
-    
-        <section id="recent-work" class="theme-default-opposite">
-            <h2 class="recent-work-title">Recent Projects</h2>
-            <div>
-                <div class="flex-box-proj">
-                    <div>
-                        <div class="proj-img-div developer-portfolio-img"></div>
-                        <h3>Developer Portfolio Website</h3>
-                        <p class="proj-desc">
-                            This website showcases my recent work, designed and developed from scratch using HTML, CSS, and JavaScript. After several iterations, I created a clean, resume-inspired layout focused on clarity and professionalism, with more improvements to come.
-                        </p>
-                        <a href="./developer-portfolio.html" class="button theme-default-opposite">Case Study</a>
-                        <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
-                        <p class="specifications">HTML | CSS | JS | Git | UX Design</p>
-                    </div>
+
+    <div id="recent-work" class="recent-work-section theme-default-opposite">
+
+        <section class="theme-default-opposite">
+            <div class="proj-grid theme-default-opposite">
+
+                <div class="proj-col-1">
+                    <h2 class="recent-work-title">Recent <br>Projects <span class="green-txt"><b>—</b></span></h2>
+
+                    <a href="./service-client.html"><div class="flex-box-proj">
+                        <div>
+                            <div class="proj-img-div mold-client-img"></div>
+                            <h3>Service Client Website</h3>
+                            <p class="proj-desc">
+                                This client wanted to revamp and vastly expand their one-page website. After in-depth discussions to understand their vision and functional needs, I planned and developed this site from the ground up using a WordPress CMS. I worked closely with the company owner, providing regular updates to ensure the final product met their expectations.
+                            </p>
+                            <p class="specifications">HTML | CSS | WordPress | UX Design</p>
+                            <br>
+                            <a href="./service-client.html" class="button theme-default-opposite">Case Study</a>
+                        </div>
+                    </div></a>
+
+                    <a href="./artist-portfolio.html"><div class="flex-box-proj">
+                        <div>
+                            <div class="proj-img-div artist-portfolio-img"></div>
+                            <h3>Artist Portfolio Website</h3>
+                            <p class="proj-desc">
+                                This is a passion project meant to act as a sample of my work in progress. It is a homepage demo of an artist portfolio website for the late Vincent van Gogh. Because of the copyright status of his work, I was able to have fun creating in lieu of legal agreements.
+                            </p>
+                            <p class="specifications">HTML | CSS | JS | Git | UX Design | Adobe Creative Suite</p>
+                            <br>
+                            <a href="./artist-portfolio.html" class="button theme-default-opposite">Case Study</a>
+                            <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default white">Github Repo</a>
+                        </div>
+                    </div></a>
                 </div>
 
-                <div class="flex-box-proj">
-                    <div>
-                        <div class="proj-img-div mold-client-img"></div>
-                        <h3>Service Client Website</h3>
-                        <p class="proj-desc">
-                            This client wanted to revamp and vastly expand their one-page website. After in-depth discussions to understand their vision and functional needs, I planned and developed this site from the ground up using a WordPress CMS. I worked closely with the company owner, providing regular updates to ensure the final product met their expectations.
-                        </p>
-                        <a href="./service-client.html" class="button theme-default-opposite">Case Study</a>
-                        <p class="specifications">HTML | CSS | WordPress | UX Design</p>
-                    </div>
-                </div>
-                
-                <div class="flex-box-proj">
-                    <div>
-                        <div class="proj-img-div travel-client-img"></div>
-                        <h3>Travel Client Website</h3>
-                        <p class="proj-desc">
-                            At my previous agency, I was given the opportunity to lead the development of a new website for a client who had just undergone a company rebrand. They needed a platform that would beautifully showcase their photography while providing a large quantity of key information. Collaborating closely with their designer, I translated conceptual ideas into a fully functional, user-centric website that enhanced the client's online presence, effectively communicated their new brand idenitity, and simplified the user experience.
-                        </p>
-                        <a href="./travel-client.html" class="button theme-default-opposite">Case Study</a>
-                        <p class="specifications">HTML | CSS | WordPress | Information Architecture</p>
-                    </div>
-                </div>
 
-                <div class="flex-box-proj">
-                    <div>
-                        <div class="proj-img-div artist-portfolio-img"></div>
-                        <h3>Artist Portfolio Website</h3>
-                        <p class="proj-desc">
-                            This is a passion project meant to act as a sample of my work in progress. It is a homepage demo of an artist portfolio website for the late Vincent van Gogh. Because of the copyright status of his work, I was able to have fun creating in lieu of legal agreements.
-                        </p>
-                        <a href="./artist-portfolio.html" class="button theme-default-opposite">Case Study</a>
-                        <a href="https://kirsten-barrett.github.io/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Live Demo</a>
-                        <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Github Repo</a>
-                        <p class="specifications">HTML | CSS | JS | Git | UX Design | Adobe Creative Suite</p>
-                    </div>
+                <div class="proj-col-2">
+                    <a href="./developer-portfolio.html"><div class="flex-box-proj">
+                        <div>
+                            <div class="proj-img-div developer-portfolio-img"></div>
+                            <h3>Developer Portfolio Website</h3>
+                            <p class="proj-desc">
+                                This website showcases my recent work, designed and developed from scratch using HTML, CSS, and JavaScript. After several iterations, I created a clean, resume-inspired layout focused on clarity and professionalism, with more improvements to come.
+                            </p>
+                            <p class="specifications">HTML | CSS | JS | Git | UX Design</p>
+                            <br>
+                            <a href="./developer-portfolio.html" class="button theme-default-opposite">Case Study</a>
+                            <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="button theme-default white">GitHub Repo</a>
+                        </div>
+                    </div></a>
+
+                    <a href="./travel-client.html"><div class="flex-box-proj">
+                        <div>
+                            <div class="proj-img-div travel-client-img"></div>
+                            <h3>Travel Client Website</h3>
+                            <p class="proj-desc">
+                                At my previous agency, I was given the opportunity to lead the development of a new website for a client who had just undergone a company rebrand. They needed a platform that would beautifully showcase their photography while providing a large quantity of key information. Collaborating closely with their designer, I translated conceptual ideas into a fully functional, user-centric website that enhanced the client's online presence, effectively communicated their new brand idenitity, and simplified the user experience.
+                            </p>
+                            <p class="specifications">HTML | CSS | WordPress | Information Architecture</p>
+                            <br>
+                            <a href="./travel-client.html" class="button theme-default-opposite">Case Study</a>
+                        </div>
+                    </div></a>
+
+                    
+
                 </div>
-
-                <!--<div class="flex-box-proj">
-                    <div>
-                        <div class="proj-img-div event-client-img"></div>
-                        <h3>Event Client Landing Page</h3>
-                        <p class="proj-desc">This is a landing page I designed and developed for a client to advertise their transportation services. This task involved balancing SEO content with images and other helpful user information to make a page that is equally as useful for humans as it is for search engine bots.</p>
-                        
-                        <button type="submit" class="button theme-default-opposite" onclick="openAGPopup()">Website Walkthrough</button>
-                        <div class="popup" id="AGpopup">
-                            <button type="button" class="popup-close" onclick="closeAGPopup()">x</button>
-                            <iframe src="https://www.youtube.com/embed/C8S7T2e1Lpc?si=0-4pnwIYE4GI10r1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div> 
-
-                        <p class="specifications">Custom CSS | WordPress | Wireframing & Web Design</p>
-                    </div>
-                </div>
-
-                <div class="flex-box-proj">
-                    <div>
-                        <div class="proj-img-div color-picker-img"></div>
-                        <h3>Website Theme Feature</h3>
-                        <p class="proj-desc">This is a feature I developed for my own personal use. It is a pop up that allows users to change the color theme of the website using Vanilla JS.</p>
-                        <a href="https://kirsten-barrett.github.io/website-theme-changer/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Demo</a>
-                        <a href="https://github.com/kirsten-barrett/website-theme-changer" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
-                        <p class="specifications">JavaScript | Git & GitHub</p>
-                    </div>
-                </div>-->
 
             </div>
-
-            <br>
             <div class="btn-container">
-                <a href="https://kirstenbarrett.myportfolio.com/" target="_blank" rel="noopener" class="theme-default-opposite center-btn button">Learn More About My Background</a>
+                <br>
+                <a href="https://kirstenbarrett.myportfolio.com/" target="_blank" rel="noopener" class="center-btn button white">Learn More About My Background</a>
             </div>
             <br>
             
         </section>
+        </div>
 
         <section id="skills">
             <h2>My Skills</h2>
@@ -220,8 +205,10 @@
                 <div class="contact-box">
                     <h3 class="center">Send me an email:</h3>
                     <div class="btn-container">
-                        <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite center-btn" id="email-btn">kirsten.barrett25@gmail.com</a>
+                        <p class="center email">kirsten.barrett25@gmail.com</p>
+                        <p class="button theme-default-opposite center-btn" id="email-btn" onclick="copyEmail()">Copy Address</p>
                     </div>
+                    <br>
                     <h3 class="second-contact center">View my resume:</h3>
                     <div class="btn-container">
                         <a href="https://docs.google.com/document/d/1fFSma6sPc6-S8qpntv7id4h_cFBvUX5tXtZoe1NO5m4/edit?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Doc</a>
@@ -236,12 +223,13 @@
                     </div>
                 </div>
             </div>
-            <hr class="solid">
         </section>
     </main>
 
     <footer>
         <section>
+            <hr class="solid">
+            <br>
             <div class="footer-text">
                 <p id="copyright">© 2024 Kirsten Barrett</p>
                 <p><a href="./sitemap.html">Sitemap</a></p>

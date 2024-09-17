@@ -24,41 +24,31 @@ body {
 }
 h1 {
     text-transform: uppercase;
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "the-seasons", sans-serif;
 }
 h2 {
     text-transform: uppercase;
     font-size: 1.8rem;
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "the-seasons", sans-serif;
     font-weight: 600;
 }
 h3 {
     text-transform: uppercase;
     margin-bottom: 30px;
-    font-family: "Red Hat Display", sans-serif;
-    font-size: 1.4rem;
+    font-family: "the-seasons", sans-serif;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 .center {
     text-align: center;
 }
-section {
-    margin: 0 auto;
+.green-txt {
+    color: #80b467;
 }
-@media only screen and (min-width: 1451px) {
-    section, nav, hr.nav-hr {
-        width: 70%;
-    }
-}
-@media screen and (max-width: 1450px) and (min-width: 1201px) {
-    section, nav, hr.nav-hr {
-        width: 80%;
-    }
-}
-@media only screen and (max-width: 1200px) and (min-width: 50px) {
-    section, nav, hr.nav-hr {
-        width: 90%;
-    }
+.white {
+    color: #fff;
+    background-color: transparent;
+    border: #fff;
 }
 hr.solid {
     border: 0.5px solid;
@@ -69,42 +59,37 @@ hr.solid {
 i {
     font-size: 4rem;
 }
-button {
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 400;
-}
-button:hover {
-    cursor: pointer;
-}
 .button {
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-family: Avenir, sans-serif;
+    font-weight: 400;
     border: 1px solid #80b467;
     background-color: #80b467;
     border-radius: 50px;
     padding: 0.7rem 2rem;
-    font-size: 18px;
+    font-size: 1.2rem;
     text-align: center;
     display: inline;
-    transition: all .2s;
+    transition: all .3s;
+    cursor: pointer;
 }
 @media only screen and (max-width: 1000px) {
     .button {
         display: block;
         margin: 15px 0;
     }
-    button {
-        width: 100%;
-    }
 }
 .button:hover {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
-a.theme-default {
+.button.theme-default {
     border: 1px solid #000;
     color:#000;
-    background-color: hsla(0, 0%, 100%, 0);
+    background-color: transparent;
+}
+.button.white {
+    border: 1px solid #fff;
+    color:#fff;
+    background-color: transparent;
 }
 .btn-container {
     height: 50px;
@@ -135,6 +120,25 @@ a {
 #contact, #recent-work {
     scroll-margin-top: 10vh;
 }
+section {
+    margin: 0 auto;
+}
+@media only screen and (min-width: 1451px) {
+    section, nav, hr.nav-hr {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1450px) and (min-width: 1201px) {
+    section, nav, hr.nav-hr {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 50px) {
+    section, nav, hr.nav-hr {
+        width: 90%;
+    }
+}
+
 /*============ HEADER ===========*/
 header {
     position: fixed;
@@ -167,32 +171,15 @@ nav {
     list-style: none;
     position: relative;
 }
-hr.nav-hr {
-    border: 0.5px solid;
-    margin: 0 auto;
-}
 .logo {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "the-seasons", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
-    padding: 12px 0px;
 }
 .menu {display: flex;}
 .menu li a {
-    font-family: "Red Hat Display", sans-serif;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    transition: 0.15s ease-in-out;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding: 10px 20px;
     margin: 0px 5px;
-}
-.menu li a:hover {
-    border: 1px solid #000;
-    border-radius: 50px;
 }
 .menu i {
     font-size: 2rem;
@@ -205,7 +192,9 @@ hr.nav-hr {
     cursor: pointer;
     display: none;
 }
-.open-menu i, .close-menu i {font-size: 1.5rem;}
+.open-menu i, .close-menu i {
+    font-size: 1.5rem;
+}
 .open-menu {
     top: 50%;
     right: 20px;
@@ -232,14 +221,12 @@ hr.nav-hr {
         color: #fff;
         transition: all .2s ease-in-out;
     }
-    .menu li a:hover {
-        border: 1px solid #fff;
-        border-radius: 50px;
-        padding: 10px 20px;
-    }
     .mobile-only {display: block;}
     .menu li {margin-top: 60px;}
-    .menu li a {color: #fff;}
+    .menu li a {
+        color: #fff!important;
+        text-align: right;
+    }
     .open-menu, .close-menu {display: block;}
     /*#check:checked ~ .menu {right: 0;}*/
 }
@@ -258,16 +245,12 @@ hr.nav-hr {
     max-height: 425px;
     border-radius: 50px;
 }
-/*
-.first{
-    padding: 60px 0px;
- }*/
 .signature {
     width: 300px;
 }
 .type-container {
     font-size: 4rem;
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "the-seasons", sans-serif;
     letter-spacing: 0.4rem;
     line-height: 3.5rem;
     text-transform: uppercase;
@@ -280,11 +263,12 @@ hr.nav-hr {
     padding-left: 5px;
 }
 .intro-subhead {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "the-seasons", sans-serif;
     color:#80b467; 
-    font-size: 1.5rem; 
+    font-size: 1.8rem; 
     font-weight: 700; 
-    margin-top: -10px;
+    margin-top: -15px;
+    margin-bottom: 10px;
 }
 .down-arrow {
     font-size: 2rem;
@@ -328,57 +312,104 @@ hr.nav-hr {
     }
 }
 /*============= RECENT WORK ===============*/
-#recent-work {
-    width: 100%;
-}
-@media only screen and (min-width: 1396px) {
-    #recent-work {
-        padding: 60px 15%;
-    }
-}
-@media screen and (max-width: 1395px) and (min-width: 951px) {
-    #recent-work {
-        padding: 60px 10%;
-    }
-}
-@media only screen and (max-width: 950px) and (min-width: 50px) {
-    #recent-work {
-        padding: 60px 5%;
-    }
+.recent-work-section {
+    padding: 60px 0px;
 }
 .recent-work-title {
-    text-align: center;
-    padding-bottom: 60px;
+    font-family: "the-seasons", sans-serif;
+    font-size: 4rem;
+    padding-bottom: 30px;
+}
+.proj-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 40px;
+    column-gap: 40px;
 }
 .proj-img-div {
     background-size: cover;
     background-position: center;
     border-radius: 50px;
-    height: 250px;
-    min-width: 250px;
+    width: 100%;
+    padding-bottom: 65%;
 }
 .flex-box-proj {
-    /*display: flex;*/
     justify-content: space-between;
     align-items: center;
     border-radius: 50px;
     min-height: 350px;
-    padding: 50px;
+    padding: 30px;
     width: 100%;
     margin-bottom: 40px;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #1e1e1e;
+    text-align: center;
 }
 .flex-box-proj h3 {
     margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.flex-box-proj p {
+    color: #fff;
+}
+.flex-box-proj:hover{
+    transform: scale(1.04);
+    transition: all 300ms ease;
 }
 @media only screen and (max-width: 600px) {
     .flex-box-proj {
         padding: 15px;
     }
 }
+#case-study {
+    color: #fff;
+    background-color: #000;
+}
+#case-study h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+#case-study h2 {
+    font-size: 1.3rem;
+    margin-bottom: -20px;
+}
+#case-study .specifications {
+    text-align: center;
+}
+.case-studies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    padding: 50px 0px;
+    margin: 0 auto;
+}
+.case-img-div {
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    height: 100px;
+}
+.case-study {
+    border: 1px solid #000;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+    padding: 40px;
+}
+.case-study:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+@media only screen and (max-width: 1120px) {
+    .case-studies {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 .artist-portfolio-img {
-    background-image: url(./images/artist-portfolio-site.jpg);
+    background-image: url(./images/artist-portfolio-mockup.jpg);
+    background-position: bottom;
 }
 .travel-client-img {
     background-image: url(./images/cosmos.jpg);
@@ -392,8 +423,8 @@ hr.nav-hr {
     background-position: center;
 }
 .mold-client-img {
-    background-image: url(./images/safer-home-services.jpg);
-    background-position: top center;
+    background-image: url(./images/shs_device_layout.png);
+    background-position: bottom center;
 }
 .event-client-img {
     background-image: url(./images/event-client.jpg);
@@ -401,10 +432,7 @@ hr.nav-hr {
 }
 .proj-desc {
     margin-bottom: 40px;
-}
-.specifications {
-    margin-top: 40px;
-    font-family: 'Courier New', Courier, monospace;
+    display: none;
 }
 @media screen and (max-width: 1395px) {
     .proj-img-div {
@@ -414,12 +442,15 @@ hr.nav-hr {
         margin-bottom: 20px;
     }
 }
-@media only screen and (min-width: 845px) {
+@media only screen and (max-width: 845px) {
     .proj-desc {
         margin-right: 20px;
     }
     .specifications {
         margin-right: 20px;
+    }
+    .proj-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 /*======== MY SKILLS ==========*/
@@ -471,6 +502,9 @@ hr.nav-hr {
     margin-bottom: 50px;
     scroll-margin-top: 390px; 
 }
+.second-contact {
+    margin-top: 80px;
+}
 @media only screen and (max-width: 845px) {
     .contact {
         flex-wrap: wrap;
@@ -478,13 +512,10 @@ hr.nav-hr {
     .contact-box {
         padding: 30px 15px 50px 15px;
     }
-    .second-contact {
-        margin-top: 50px;
-    }
 }
-@media only screen and (min-width: 845px) {
-    .second-contact {
-        margin-top: 50px;
+@media only screen and (min-width: 1001px) {
+    .email {
+        margin-bottom: 10px;
     }
 }
 .fa-linkedin {
@@ -508,7 +539,6 @@ a > i:hover {
 /*============= FOOTER =============*/
 footer {
     margin: 20px 0px;
-    font-family: "Red Hat Display", sans-serif;
 }
 .footer-text {
     text-transform: uppercase;

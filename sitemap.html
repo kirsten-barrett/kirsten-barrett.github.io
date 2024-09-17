@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
     <title>Sitemap | Kirsten Barrett</title>
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <!-- end google fonts-->
+    <!-- adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/bst4vhi.css">
+    <!-- end adobe fonts -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C69YSC6HX"></script>
     <script>
@@ -42,26 +40,25 @@
                 <li class="logo"><a href="./index.html">Kirsten Barrett</a></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li for="check"><a href="#contact" onclick="menuClose()" class="anchor">Contact</a></li>
-                    <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener">GitHub</a></li>
-                    <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="./index.html#recent-work" class="button theme-default">Projects</a></li>
+                    <li for="check"><a href="#contact" onclick="menuClose()" class="button theme-default anchor">Contact</a></li>
+                    <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="button theme-default">GitHub</a></li>
+                    <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="button theme-default">Linkedin</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>
             </ul>
         </nav>
-        <hr class="nav-hr">
     </header>
 
-    <br><br>
-
     <section>
+        <hr class="solid">
+        <br><br>
         <h1>Sitemap</h1>
         <br>
         <ul class="sitemap-list">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
+            <li>Projects</li>
             <li class="indent"><a href="./artist-portfolio.html">Artist Portfolio Website</a></li>
             <li class="indent"><a href="./developer-portfolio.html">Developer Portfolio Website</a></li>
             <li class="indent"><a href="./service-client.html">Service Client Website</a></li>
@@ -74,36 +71,39 @@
 
     </section>
 
-        <section id="contact">
-            <h2 class="contact-title">Contact</h2>
-            <div class="contact">
-                <div class="contact-box">
-                    <h3 class="center">Send me an email:</h3>
-                    <div class="btn-container">
-                        <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite center-btn" id="email-btn">kirsten.barrett25@gmail.com</a>
-                    </div>
-                    <h3 class="second-contact center">View my resume:</h3>
-                    <div class="btn-container">
-                        <a href="https://docs.google.com/document/d/1fFSma6sPc6-S8qpntv7id4h_cFBvUX5tXtZoe1NO5m4/edit?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Doc</a>
-                    </div>
+    <section id="contact">
+        <h2 class="contact-title">Contact</h2>
+        <div class="contact">
+            <div class="contact-box">
+                <h3 class="center">Send me an email:</h3>
+                <div class="btn-container">
+                    <p class="center email">kirsten.barrett25@gmail.com</p>
+                    <p class="button theme-default center-btn" id="email-btn" onclick="copyEmail()">Copy Address</p>
                 </div>
-
-                <div class="contact-box theme-default-opposite">
-                    <h3 class="center">Let's connect!</h3>
-                    <div class="icon-container">
-                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a>
-                    </div>
+                <br>
+                <h3 class="second-contact center">View my resume:</h3>
+                <div class="btn-container">
+                    <a href="https://docs.google.com/document/d/1fFSma6sPc6-S8qpntv7id4h_cFBvUX5tXtZoe1NO5m4/edit?usp=sharing" target="_blank" rel="noopener" class="button theme-default center-btn">Kirsten's Google Doc</a>
                 </div>
             </div>
-            <hr class="solid">
-        </section>
+
+            <div class="contact-box theme-default-opposite">
+                <h3 class="center">Let's connect!</h3>
+                <div class="icon-container">
+                    <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 
     <footer>
         <section>
+            <hr class="solid">
+            <br>
             <div class="footer-text">
-                <p>© 2024 Kirsten Barrett</p>
+                <p id="copyright">© 2024 Kirsten Barrett</p>
                 <p><a href="./sitemap.html">Sitemap</a></p>
             </div>
         </section>
