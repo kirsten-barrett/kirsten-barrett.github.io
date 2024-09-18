@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the meta description.">
+    <meta name="description" content="Explore a passion project showcasing my design and development skills, featuring a homepage demo for an artist portfolio website dedicated to Vincent van Gogh. Built from scratch using HTML, CSS, and JavaScript, this project highlights creative freedom with a focus on visual storytelling.">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
     <title>Artist Portfolio Website Case Study | UX Design & Web Development | Kirsten Barrett</title>
@@ -52,17 +52,18 @@
         
     <main class="artist-portfolio-page case-study-page">
         <div class="dark-bg">
-            <section> 
-                <div class="intro-section">
+            <section class="intro-section"> 
+                <p class="subhead">UX/UI Design & Full-Stack Web Development</p>
+                <h1>Artist Portfolio Site</h1>
+                <br>
+                <p class="divider"><b>—</b></p>
+                <br>
+                <h3>Project Overview</h3>
+                <p>This is a passion project meant to act as a sample of my work. It is a homepage demo of an artist portfolio website for the late Vincent van Gogh. Because of the copyright status of his work, I was able to have fun creating in lieu of legal agreements.</p>
+                <br>
+                <div class="grid-half-lg">
                     <div>
-                        <p>UX/UI Design & Full-Stack Web Development</p>
-                        <h1>Artist Portfolio Site</h1>
-                        <br>
-                        <p>This is a passion project meant to act as a sample of my work. It is a homepage demo of an artist portfolio website for the late Vincent van Gogh. Because of the copyright status of his work, I was able to have fun creating in lieu of legal agreements.</p>
-                    </div>
-                    <div>
-                        <br>
-                        <p class="objectives">Objectives:</p>
+                        <h3>Project Goals</h3>
                         <div class="list">
                             <ul>
                                 <li>Implement a fully-responsive and creative home for his work</li>
@@ -71,22 +72,25 @@
                             </ul>
                         <p class="disclaimer">*As the live site is a homepage demo, please be aware that all links are placeholders.</p>
                         </div>
+                        <div class="flex-btns">
+                            <a href="https://kirsten-barrett.github.io/van-gogh-portfolio/" target="_blank" rel="noopener" class="button theme-default">View The Live Site</a>
+                            <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">GitHub Repository</a>
+                        </div>
                     </div>
-                    <div class="flex-btns">
-                        <a href="https://kirsten-barrett.github.io/van-gogh-portfolio/" target="_blank" rel="noopener" class="button theme-default">View The Live Site</a>
-                        <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">GitHub Repository</a>
-                    </div>
+                    <img src="./images/artist_mockup2.png" alt="new client website">
                 </div>
             </section>
         </div>
-        
-        <div>
-            <div class="prototyping case-study-grid">
-                <div class="grid-text flex-text">
-                    <h2>Ideation & <br>Wireframing</h2>
+
+        <section>
+            <h2>Ideation <br>& Wireframing</h2>
+            <p class="divider"><b>—</b></p>
+            <br><br>
+            <div class="case-study-grid">
+                <div>
                     <p>The key focus for the UX design was simplicity and user engagement. I wanted to make sure users could quickly explore the menu and find what they were looking for, or slowly peruse the homepage visuals and be gently led to more.</p>
                     <br>
-                    <h3>Necessities:</h3>
+                    <h3 class="left-align">Necessities:</h3>
                     <div class="list">
                         <ul>
                             <li>display work</li>
@@ -96,45 +100,51 @@
                         </ul>
                     </div>
                 </div>
-                <div class="grid-imgs double-img">
-                    <img src="./images/wireframe1.jpg" alt="wireframe">
-                    <img src="./images/wireframe2.jpg" alt="wireframe">
+                <div class="double-img">
+                    <img src="./images/wireframe1.jpg" alt="wireframe" class="border-img">
+                    <img src="./images/wireframe2.jpg" alt="wireframe" class="border-img">
                 </div>
             </div>
+        </section>
 
-            <div class="styling case-study-grid-reverse dark-bg">
-                <div class="grid-imgs double-img">
-                    <img src="./images/colors-type.jpg" alt="web design typography">
-                    <img src="./images/components-page.jpg" alt="website style guide">
-                </div>
-                <div class="grid-text">
-                    <div class="flex-text">
-                        <h2>Style</h2>
-                        <p>I wanted the style of the website to reflect the nature of Van Gogh's work. I pulled colors and motion from his paintings to incorporate into the typography and theme of the site. I focused particularly on <em>Wheat Field With Cypresses</em> because I believed this painting to be representative of his work in terms of color and brush stroke. I also picked a background color reminiscent of archival canvas.</p>
-                        <br>
-                        <img src="./images/components1.jpg" alt="style mockup" class="components-img">
+        <div class="dark-bg">
+            <section>
+                <h2>Style</h2>
+                <p class="divider"><b>—</b></p>
+                <br><br>
+                <div class="case-study-grid">
+                    <p>I wanted the style of the website to reflect the nature of Van Gogh's work. I pulled colors and motion from his paintings to incorporate into the typography and theme of the site. I focused particularly on <em>Wheat Field With Cypresses</em> because I believed this painting to be representative of his work in terms of color and brush stroke. I also picked a background color reminiscent of archival canvas.</p>
+                    <div class="double-img">
+                        <img src="./images/colors-type.jpg" alt="web design typography" class="border-img">
+                        <img src="./images/components-page.jpg" alt="website style guide" class="border-img">
                     </div>
                 </div>
-            </div>
-
-            <div class="bringing-tog case-study-grid">
-                <div class="grid-text flex-text">
-                    <h2>Prototyping, Development, & Interactivity</h2>
-                    <p>As someone known for his quirks, I believe Van Gogh would have wanted some unique features on his personal website. I added hover states, scroll responsiveness, and am working on an off-putting eye-mouse-track in his portrait to retain user attention. The site is spacious and simple and allows these features to pop while maintaining ease and intuiutiveness.</p>
-                </div>
-
-                <div class="grid-imgs double-img">
+            </section>
+        </div>
+        
+        <section>
+            <h2>Prototyping <br>& Development</h2>
+            <p class="divider"><b>—</b></p>
+            <br><br>
+            <div class="case-study-grid">
+                <p>As someone known for his quirks, I believe Van Gogh would have wanted some unique features on his personal website. I added hover states, scroll responsiveness, and am working on an off-putting eye-mouse-track in his portrait to retain user attention. The site is spacious and simple and allows these features to pop while maintaining ease and intuiutiveness.</p>
+                <div class="double-img">
                     <img src="./images/interactivity2.jpg" alt="mobile view">
                     <img src="./images/interactivity1.jpg" alt="desktop view">
                 </div>
             </div>
-        </div>
+
+        </section>
     </main>
 
     <div class="flex-btns">
         <a href="https://kirsten-barrett.github.io/van-gogh-portfolio/" target="_blank" rel="noopener" class="button theme-default">View The Live Site</a>
         <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">GitHub Repository</a>
     </div>
+    <br>
+            <div class="flex-btns">
+                <a href="./index.html" class="theme-default button">Back To The Homepage</a>
+            </div>
 
 
     <br><br>

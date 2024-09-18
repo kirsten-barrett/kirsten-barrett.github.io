@@ -1,21 +1,4 @@
 /*======== CASE STUDY PAGE (GENERAL) ========*/
-.case-study-page p, .case-study-page li{
-    font-size: 1.1rem;
-}
-.case-study-page h1 {
-    font-size: 3rem;
-}
-.case-study-page h2 {
-    font-size: 3.2rem;
-    padding-bottom: 1rem;
-}
-.case-study-page h3 {
-    font-size: 2rem;
-}
-.intro-section {
-    width: 75%;
-    padding: 60px 0px;
-}
 .gray-client-page .dark-bg {
     background-color: #e5e5e5;
     color: #000;
@@ -27,11 +10,50 @@
     background-color: #000;
     color: #fff;
 }
+.case-study-page p, .case-study-page li{
+    font-size: 1.1rem;
+    text-align: left;
+}
+.case-study-page h1 {
+    font-size: 3rem;
+}
+.case-study-page h2 {
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.case-study-page h3 {
+    font-size: 2rem;
+    text-align: right;
+}
+p.divider {
+    text-align: center;
+}
+.case-study-page section {
+    padding: 60px 0px;
+}
+.intro-section {
+    position: relative;
+}
+.intro-section img {
+    display: block;
+    max-width: 500px;
+    position: absolute;
+    bottom:0;
+    left:80%;
+    transform:translateX(-50%);
+}
+.intro-section h3 {
+    text-align: left;
+}
+.intro-section .divider {
+    text-align: left;
+}
+.intro-section .flex-btns {
+    justify-content: left;
+}
 .disclaimer {
     padding-top: 40px;
-}
-.objectives {
-    padding-bottom: 10px;
 }
 .flex-btns {
     display: flex;
@@ -39,38 +61,45 @@
     justify-content: center;
     padding-top: 40px;
 }
-.intro-section .flex-btns {
-    justify-content: left;
-}
 .case-study-grid {
     display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+.case-study-grid img {
+    width: 100%;
+    object-fit: contain;
+}
+.grid-half-sm {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
-    row-gap: 40px;
+    gap: 20px;
 }
-.case-study-grid-reverse {
+.grid-half-lg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: end;
+}
+.grid-half-lg img {
+    width: 85%;
+    object-fit: contain;
+    text-align: right;
+}
+.double-img {
     display: flex;
-    column-gap: 40px;
-    row-gap: 40px;
-    
-}
-.grid-text img {
-    max-width: 450px;
-}
-.grid-imgs {
-    display: flex;
-    column-gap: 40px;
-    row-gap: 40px;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: row;
 }
 .double-img img {
-    max-width: 400px;
-    height: auto;
+    width: 48%;
+    object-fit: contain;
+    margin: 5px;
 }
-.single-img img {
-    max-width: 700px;
-    height: auto;
+.user-persona-img {
+    width: 100%;
+    object-fit: contain;
+    margin: 10px 0px;
 }
 .walkthru-vid {
     position: relative;
@@ -85,71 +114,41 @@
     left: 0;
     top: 0;
 }
-.prototyping img, .styling img, .border {
+.border-img {
     border: 1px solid #000;
 }
-.prototyping, .styling, .bringing-tog {
-    padding: 100px 40px;
-}
-.flex-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 517px;
-}
-.final-section {
-    text-align: center;
-    padding: 100px 0px;
-}
-.final-section .flex-btns {
-    align-items: center;
+.left-align {
+    text-align: left!important;
 }
 
 
 
 @media only screen and (max-width: 1380px) {
-    .list {
-        text-align: center;
-    }
-    .list ul {
-        display: inline-block;
-        text-align: left;
-    }
-    .dark-bg .flex-btns {
+    .intro-section .flex-btns {
         justify-content: center;
-    }
-    .flex-text {
-        height: auto;
-    }
-    .intro-section{
-        width: 100%;
     }
     .case-study-grid {
         grid-template-columns: repeat(1, 1fr);
     }
-    .case-study-grid-reverse {
-        grid-template-columns: repeat(1, 1fr);
-        flex-direction: column-reverse;
-    }
-    .case-study-page h2, .case-study-page h1, .case-study-page h3, .case-study-page p {
+    .case-study-page h1, .case-study-page h2, .case-study-page h3, .case-study-page .subhead, .intro-section .divider {
         text-align: center;
-     }
-     .components-img {
-        display: none;
     }
 }
-@media only screen and (max-width: 900px) {
-    .grid-imgs {
-        flex-direction: column;
-        align-items: center;
+@media only screen and (max-width: 1000px) {
+    .grid-half-lg {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 250px;
     }
-    .single-img img {
-        max-width: 500px;
+    .intro-section img {
+        left: 50%;
     }
 }
-@media only screen and (max-width: 600px) {
-    .single-img img {
-        max-width: 400px;
+@media only screen and (max-width: 500px) {
+    .grid-half-sm {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-half-lg {
+        margin-bottom: 160px;
     }
 }
 @media only screen and (max-width: 425px) {
@@ -157,19 +156,10 @@
         flex-direction: column;
         padding: 40px 30px;
     }
-    .grid-text h2 {
-        font-size: 2rem;
+    .case-study-page h2 {
+        font-size: 2.6rem;
     }
-    .grid-imgs img {
-        max-width: 280px;
-    }
-    .interactivity {
-        max-width: 280px;
-    }
-    .prototyping, .styling, .bringing-tog {
-        padding: 100px 5%;
-    }
-    .single-img img {
-        max-width: 280px;
+    .grid-half-lg {
+        margin-bottom: 120px;
     }
 }
