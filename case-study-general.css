@@ -73,8 +73,13 @@ p.divider {
 }
 .grid-half-sm {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+.grid-half-sm img {
+    width: 100%;
+    object-fit: contain;
 }
 .grid-half-lg {
     display: grid;
@@ -145,14 +150,14 @@ p.divider {
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 250px;
     }
+    .grid-half-sm {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .intro-section img {
         left: 50%;
     }
 }
 @media only screen and (max-width: 500px) {
-    .grid-half-sm {
-        grid-template-columns: repeat(1, 1fr);
-    }
     .grid-half-lg {
         margin-bottom: 180px;
     }
