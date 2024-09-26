@@ -1,14 +1,6 @@
 /*======== CASE STUDY PAGE (GENERAL) ========*/
-.gray-client-page .dark-bg {
-    background-color: #e5e5e5;
-    color: #000;
-}
 .artist-portfolio-page .dark-bg {
     background-color: #edebe4;
-}
-.portfolio-site-page .dark-bg {
-    background-color: #1e1e1e;
-    color: #fff;
 }
 .case-study-page p, .case-study-page li{
     font-size: 1.1rem;
