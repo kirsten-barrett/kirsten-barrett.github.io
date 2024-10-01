@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
+    <title>Recipe App Case Study | UX/UI Design | Kirsten Barrett</title>
+    <!-- adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/bst4vhi.css">
+    <!-- end adobe fonts -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C69YSC6HX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2C69YSC6HX');
+    </script>
+    <!-- Google Tag  Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KTD28MV6');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTD28MV6"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    
+    <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="logo"><a href="./index.html">Kirsten Barrett</a></li>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+                        <li><a href="./index.html#recent-work" class="button theme-default">Case Studies</a></li>
+                        <li for="check"><a href="#contact" onclick="menuClose()" class="button theme-default anchor">Contact</a></li>
+                        <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="button theme-default">GitHub</a></li>
+                        <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="button theme-default">LinkedIn</a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="gray-client-page case-study-page">
+        <div class="dark-bg">
+            <section class="intro-section"> 
+                <p class="subhead">UX Case Study</p>
+                <h1>Recipe Sharing App</h1>
+                <br>
+                <p class="divider"><b>—</b></p>
+                <br>
+                <p><b>Project Overview:</b> </p>
+                <br>
+                <div class="grid-half-lg">
+                    <div>
+                        <p><b>Team:</b> Solo (for now)</p>
+                        <br>
+                        <p><b>My Role:</b> UX/UI Design & Branding</p>
+                        <br>
+                        <p><b>Industry: </b>Food & Beverage</p>
+                        <br>
+                        <p><b>Project Duration:</b> 3 Months</p>
+                        <br>
+                        <p><b>Tools:</b> Figma, Adobe Creative Suite, React Native</p>
+                    </div>
+                    <img src="./images/shs_device_layout2.png" alt="new client website">
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <h2>The Problem</h2>
+            <p class="divider"><b>—</b></p>
+            <br><br>
+            <div class="case-study-grid">
+                <h3>Client Vision & Brand</h3>
+                <p>My first step was to conduct an in-depth discussion with the client to understand their business, target audience, and vision for the site. This helped identify their brand message, values, and the overall aesthetic they wanted to convey. Given their family-owned business background, it was important that the site feel both approachable and professional, reflecting their credibility and customer-centric approach.</p>
+            </div>
+            <br><br><br>
+                    <div class="case-study-grid">
+                        <h3>User Personas</h3>
+                        <div>
+                            <p>I created two primary user personas to guide design decisions and content organization.</p>
+                            <div class="grid-half-sm">
+                                <div>
+                                    <img src="./images/sarah_shs.png" alt="Sarah" class="user-persona-img">
+                                    <h4>Sarah - A Busy Professional</h4>
+                                    <div class="list">
+                                        <ul>
+                                            <li><b>Age:</b> 35</li>
+                                            <li><b>Goals:</b> Needs quick access to services and clear contact options. Prefers websites with minimalistic design and concise information.</li>
+                                            <li><b>Pain Points:</b> Frustrated by cluttered sites that take too long to navigate; lacks the time to sift through irrelevant information.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./images/john_shs.png" alt="John" class="user-persona-img">
+                                    <h4>John - A Homeowner Looking for Trust</h4>
+                                    <div class="list">
+                                        <ul>
+                                            <li><b>Age:</b> 50</li>
+                                            <li><b>Goals:</b> Wants detailed information about services, past client work, and customer reviews to establish trust.</li>
+                                            <li><b>Pain Points:</b> Unclear pricing, confusing navigation, and lack of contact details create friction in reaching out to service providers.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>These personas helped ensure the website met the needs of different user types, emphasizing both efficiency and detailed content. This put a focus on <b>straight-to-the-point, valuable information</b>.</p>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="case-study-grid">
+                        <h3>Pain Points</h3>
+                        <div>
+                            <div class="list">
+                                <ul>
+                                    <li><b>Limited content</b> on the one-page site made it hard for users to understand the full breadth of the client's services</li>
+                                    <li><b>No obvious CTAs</b> were present to drive conversions such as phone calls, emails, or service bookings</li>
+                                    <li>The existing site did not offer <b>mobile responsiveness</b>, causing usability issues on mobile devices</li>
+                                    <li>Although the site listed their certifications, it was sparse and unprofessional leading to a <b>lack of trust</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="case-study-grid goals-block">
+                        <h3>Project Goals</h3>
+                        <div>
+                            <p>The key objectives for the project were:</p>
+                            <div class="list">
+                                <ul>
+                                    <li><b>Provide a clear path for users to contact for, or inquire about, services</b></li>
+                                    <li><b>Provide detailed information</b> about the company's services and integrate public health knowledge</li>
+                                    <li><b>Implement a professional, responsive, and user-friendly platform</b> that promotes trust and ease of use</li>
+                                    <li><b>Drive new users to the site</b> by use of SEO best practices and optimized content</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <div class="dark-bg">
+            <section>
+                <h2>Design Process</h2>
+                <p class="divider"><b>—</b></p>
+                <br><br>
+                    <div class="case-study-grid">
+                        <h3>Site Architecture & Organization</h3>
+                        <div>
+                            <img src="./images/service-client-info-arch.jpg" alt="information architecture">
+                            <br><br>
+                            <p>One of the most significant improvements was transitioning from a single-page website to a multi-page structure. The new site architecture provided clear, easy-to-follow navigation.</p>
+                            <br>
+                            <p>While we aimed to expand the site, we prioritized featuring the most critical information and clear CTAs on the homepage to reduce click count, accommodating the potential urgency for fast service.</p>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="case-study-grid">
+                        <h3>Wireframes & Prototypes</h3>
+                        <p>Using a notebook, I sketched low-fidelity wireframes to outline the website's structure and key user flows, ensuring a seamless experience from one page to another. After team approval, I developed a quick prototype using WordPress and Elementor to provide a more tangible experience of the site's design and functionality.</p>
+                    </div>
+                    <br><br><br>
+                    <div class="case-study-grid">
+                        <h3>Style Guide & Visual Design</h3>
+                        <div>
+                            <div class="double-img">
+                                <img src="./images/shs_portfolio_styleguide.jpg" alt="web design typography">
+                                <img src="./images/service-client-style2.jpg" alt="website style guide">
+                            </div>
+                            <br>
+                            <p>The client had a <b>blue and red color scheme</b> tied to their logo, so I incorporated these colors throughout the design as accents, ensuring they were bold yet balanced. I maintained a minimalistic style to prevent the colors from overwhelming the user, focusing on clean typography and plenty of white space to enhance readability.</p>
+                        </div>
+                    </div>
+            </section>           
+        </div>
+
+        <section>
+            <h2>The Solution</h2>
+            <p class="divider"><b>—</b></p>
+                    <br><br>
+                    <div class="case-study-grid">
+                        <h3>Call To Action</h3>
+                        <div>
+                            <img src="./images/service-client-solution.jpg" alt="call to action design" class="border">
+                            <br><br>
+                            <p>As the homepage is the primary entry point, I ensured that links to call, text, or submit a form were clearly visible within the initial screen view. Additionally, I placed contact information and business hours in the header to make them immediately accessible to users.</p>
+                            <br>
+                            <p>The call-to-actions are consistently placed across all pages, ensuring users are encouraged to reach out at any point in their site journey.</p>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="case-study-grid">
+                        <h3>Valuable Information</h3>
+                        <div>
+                            <img src="./images/service-client-solution2.jpg" alt="content organization" class="border">
+                            <br><br>
+                            <p>One challenge we faced was including a wealth of information while keeping it all digestable for the user.</p>
+                            <br>
+                            <p>I used dropdowns where appropriate and organized the most detailed information on dedicated pages. We ensured the content was concise yet impactful, integrating SEO keywords to optimize for search engines while maintaining a user-first focus for readability, engagement, and genuine information sharing.</p>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="case-study-grid">
+                        <h3>Creating Trust</h3>
+                        <div>
+                            <img src="./images/service-client-solution1.jpg" alt="mobile ux layouts">
+                            <br><br>
+                            <p>Featuring a FAQs tab helps users quickly find the answers they are looking for, including before-and-after images from past projects allows users to connect with the client's work, and adding testimonials takes the guesswork out of finding quality service. Each of these things fosters empathy and trust with potential clients. This makes them feel more comfortable reaching out and confident that this business can deliver the services they need.</p>
+                        </div>
+                    </div>
+        </section>
+
+        <div class="dark-bg">
+            <section>
+                <h2>Development</h2>
+                <p class="divider"><b>—</b></p>
+                <br><br>
+                <div class="case-study-grid">
+                    <h3>Technical Considerations</h3>
+                    <div>
+                        <p>I chose WordPress with an Elementor theme for its flexibility and ease of use. This ensured that the client could manage their website in the future without needing extensive technical knowledge.</p>
+                        <br>
+                        <p>Development involved:</p>
+                        <div class="list">
+                            <ul>
+                                <li><b>Performance optimization:</b> Image compression, CSS/JS minification, and lazy loading for fast load times</li>
+                                <li><b>SEO improvements:</b> On-page SEO techniques like meta descriptions, optimized titles, quality content, and schema markup</li>
+                                <li><b>Mobile responsiveness:</b> Ensuring that the site delivered a consistent, fully functional experience across all screen sizes</li>
+                                <li><b>Database storage for form submissions:</b> Capturing and securely storing form data for easy access and management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="case-study-grid">
+                    <h3>Testing & Launch</h3>
+                    <div>
+                        <p>Before launching the site, I conducted rigorous testing:</p>
+                        <div class="list">
+                            <ul>
+                                <li><b>Browser compatibility</b> across Chrome, Firefox, Safari, and Edge</li>
+                                <li><b>Performance testing</b> using Google Lighthouse, with a focus on improving load times and page speed</li>
+                                <li><b>Accessibility checks</b> to meet WCAG standards, ensuring the site was inclusive for all users</li>
+                            </ul>
+                        </div>
+                        <p>After thorough testing, the site went live. I also provided the client with training and documentation to manage and update the website independently.</p>
+                    </div>
+                </div>
+        </section>
+        </div>
+ 
+            <section>
+                <h2>Results <br>& Conclusion</h2>
+                <p class="divider"><b>—</b></p>
+                <br><br>
+                <div class="case-study-grid">
+                    <div class="walkthru-vid">
+                        <iframe src="https://www.youtube.com/embed/pSK3tIK1w5Q?si=iMnub5LwMJhc4KEP&autoplay=1&loop=1&mute=1&playlist=pSK3tIK1w5Q" title="web development walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <p>The final website achieved all the set goals:</p>
+                        <div class="list">
+                            <ul>
+                                <li><b>Simplified user experience:</b> The multi-page structure made navigation easier, helping users find the information they needed quickly.</li>
+                                <li><b>Clear, compelling CTAs:</b> The addition of clear contact options, combined with SEO best practices, resulted in a 30-40% increase in phone calls and form submissions in the first 90 days.</li>
+                                <li><b>Built trust:</b> By incorporating real project photos, testimonials, detailed service information, and a professional design, the site effectively built trust with potential customers.</li>
+                                <li><b>Responsive design:</b> The website functioned seamlessly across devices, improving the mobile experience and driving engagement.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p>By transforming the client's basic one-page site into a user-friendly platform, we not only enhanced their online presence but also set the stage for future business growth. The new website reflected the company's evolving needs while keeping the user at the center of the design process. The owner was thrilled with the outcome, expressing pride in how the website represented their brand. Through close collaboration with the client and a focus on UX best practices, we created a platform that effectively balanced aesthetics and functionality, and it was incredibly rewarding to see how proud the owner was of their new digital presence.</p>
+                <div class="flex-btns">
+                    <a href="./index.html#recent-work" class="theme-default button">View Other Projects</a>
+                </div>
+            </section>
+    </main>
+
+
+    <br>
+    <section id="contact">
+        <h2 class="contact-title">Contact</h2>
+        <div class="contact">
+            <div class="contact-box">
+                <h3 class="center">Send me an email:</h3>
+                <div class="btn-container">
+                    <p class="center email">kirsten.barrett25@gmail.com</p>
+                    <p class="button theme-default-opposite center-btn" id="email-btn" onclick="copyEmail()">Copy Address</p>
+                </div>
+                <br>
+                <h3 class="second-contact center">View my resume:</h3>
+                <div class="btn-container">
+                    <a href="https://drive.google.com/file/d/1ELyYTd6oBeDWqTWd7bUhxKDhnBi3thyl/view?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Doc</a>
+                </div>
+            </div>
+
+            <div class="contact-box theme-default-opposite">
+                <h3 class="center">Let's connect!</h3>
+                <div class="icon-container">
+                    <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <footer>
+            <section>
+                <hr class="solid">
+                <br>
+                <div class="footer-text">
+                    <p id="copyright">© 2024 Kirsten Barrett</p>
+                    <p><a href="./sitemap.html">Sitemap</a></p>
+                </div>
+            </section>
+        </footer>
+
+    <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
+    <script src="./script/emailButton.js"></script>
+    <script src="./script/responsiveMenu.js"></script>
+</body>
+</html>

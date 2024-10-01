@@ -1,57 +1,47 @@
 /*======== CASE STUDY PAGE (GENERAL) ========*/
-.artist-portfolio-page .dark-bg {
-    background-color: #edebe4;
+.intro-section h1 {
+    font-size: 4.5rem;
+    padding-bottom: 0px;
 }
-.case-study-page p, .case-study-page li{
-    font-size: 1.1rem;
-    text-align: left;
+.five-col-grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 30px;
+    justify-content:space-between;
+    margin: 40px 0px;
 }
-.case-study-page h1 {
-    font-size: 3rem;
+.list-title {
+    font-weight: 700;
+    text-transform: uppercase;
 }
-.case-study-page h2 {
-    font-size: 3.2rem;
-    padding-bottom: 1rem;
+.case-study-content h2 {
     text-align: center;
+    font-size: 3.5rem;
+    padding: 50px 0px;
 }
-.case-study-page h3 {
-    font-size: 2rem;
-    text-align: right;
+.section-img {
+    width: 100%; 
+    height: 450px; 
+    object-fit: cover; 
+    border-radius: 50px;
+    margin: 50px 0px;
 }
-p.divider {
-    text-align: center;
+.img-50-0 {
+    object-position: 50% 0%;
 }
-.case-study-page section {
-    padding: 60px 0px;
+.img-50-100 {
+    object-position: 50% 100%;
 }
-.intro-section {
-    position: relative;
+.case-study-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin: 50px 0px;
 }
-.intro-section img {
-    display: block;
-    max-width: 500px;
-    position: absolute;
-    bottom:0;
-    left:80%;
-    transform:translateX(-50%);
-}
-.intro-section h3 {
-    text-align: left;
-}
-.intro-section .divider {
-    text-align: left;
-}
-.intro-section .flex-btns {
-    justify-content: left;
-}
-.disclaimer {
-    padding-top: 40px;
-}
-.flex-btns {
-    display: flex;
-    column-gap: 20px;
-    justify-content: center;
-    padding-top: 40px;
+.subhead {
+    padding-top: 60px;
+    font-size: 1.2rem;
 }
 .case-study-grid {
     display: grid;
@@ -63,28 +53,6 @@ p.divider {
     width: 100%;
     object-fit: contain;
 }
-.grid-half-sm {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
-    row-gap: 40px;
-}
-.grid-half-sm img {
-    width: 100%;
-    object-fit: contain;
-}
-.grid-half-lg {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-    align-items: end;
-}
-.grid-half-lg img {
-    width: 85%;
-    object-fit: contain;
-    text-align: right;
-    margin-top: 20px;
-}
 .double-img {
     display: flex;
     flex-direction: row;
@@ -93,16 +61,6 @@ p.divider {
     width: 48%;
     object-fit: contain;
     margin: 5px;
-}
-.user-persona-img {
-    width: 100%;
-    object-fit: contain;
-    margin: 10px 0px;
-}
-.goals-block {
-    border: 2px solid #000;
-    border-radius: 50px;
-    padding: 50px;
 }
 .walkthru-vid {
     position: relative;
@@ -117,11 +75,26 @@ p.divider {
     left: 0;
     top: 0;
 }
-.border-img {
-    border: 1px solid #000;
+.flex-btns {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
-.left-align {
-    text-align: left!important;
+.grid-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+.grid-half img {
+    width: 100%;
+    object-fit: contain;
+}
+.user-persona-img {
+    width: 100%;
+    margin: 10px 0px;
 }
 
 
@@ -133,39 +106,32 @@ p.divider {
     .case-study-grid {
         grid-template-columns: repeat(1, 1fr);
     }
-    .case-study-page h1, .case-study-page h2, .case-study-page h3, .case-study-page .subhead, .intro-section .divider {
-        text-align: center;
+}
+@media only screen and (max-width: 1075px) {
+    .five-col-grid {
+        grid-template-columns: repeat(3, auto);
     }
 }
 @media only screen and (max-width: 1000px) {
-    .grid-half-lg {
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 250px;
-    }
-    .grid-half-sm {
+    .grid-half {
         grid-template-columns: repeat(1, 1fr);
     }
-    .intro-section img {
-        left: 50%;
+    .intro-section h1 {
+        font-size:3rem;
+        padding-bottom: 0px;
+    }
+    .case-study-content h2 {
+        font-size: 2.8rem;
     }
 }
-@media only screen and (max-width: 500px) {
-    .grid-half-lg {
-        margin-bottom: 180px;
-    }
-    .goals-block {
-        padding: 20px;
+@media only screen and (max-width: 700px) {
+    .five-col-grid {
+        grid-template-columns: repeat(1, auto);
     }
 }
 @media only screen and (max-width: 425px) {
     .flex-btns {
         flex-direction: column;
         padding: 40px 30px;
-    }
-    .case-study-page h2 {
-        font-size: 2.6rem;
-    }
-    .grid-half-lg {
-        margin-bottom: 140px;
     }
 }

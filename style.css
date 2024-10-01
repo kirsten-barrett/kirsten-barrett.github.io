@@ -9,10 +9,10 @@ html {
 }
 .theme-default {
     background-color: #fff;
-    color: #000;
+    color: #1f0f03;
 }
 .theme-default-opposite {
-    background-color: #000;
+    background-color: #1f0f03;
     color: #fff;
 }
 body {
@@ -33,8 +33,8 @@ h2 {
     font-weight: 600;
 }
 h3 {
-    text-transform: uppercase;
     font-family: "the-seasons", sans-serif;
+    text-transform: uppercase;
     font-size: 1.6rem;
     font-weight: 600;
 }
@@ -50,8 +50,12 @@ h3 {
     border: #fff;
 }
 .dark-bg {
-    background-color: #e5e5e5;
-    color: #000;
+    background-color: #e7dbd6;
+    color: #1f0f03;
+}
+.black-bg {
+    background-color: #000;
+    color: #fff;
 }
 .border {
     border: 1px solid #000;
@@ -61,6 +65,12 @@ hr.solid {
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
+}
+.vert-align-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: space-between;
 }
 i {
     font-size: 4rem;
@@ -77,13 +87,14 @@ i {
     display: inline;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+
 }
 .button:hover {
     font-size: 1.3rem;
 }
 .button.theme-default {
-    border: 1px solid #000;
-    color:#000;
+    border: 1px solid #1f0f03;
+    color:#1f0f03;
     background-color: transparent;
 }
 .button.white {
@@ -101,7 +112,12 @@ i {
 }
 a {
     text-decoration: none;
-    color: #000;
+    color: #1f0f03;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 div.list {
     margin: 15px 0px;
@@ -140,6 +156,21 @@ section {
     .button {
         display: block;
         margin: 15px 0;
+    }
+    .vert-align-flex {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .metric-num {
+        display: inline;
     }
 }
 @media only screen and (max-width: 1200px) and (min-width: 50px) {
@@ -226,7 +257,7 @@ nav {
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: #000;
+        background-color: #1f0f03;
         color: #fff;
         transition: all .2s ease-in-out;
     }
@@ -301,6 +332,9 @@ nav {
         text-align: center;
         margin: 40px 0px;
     }
+    .signature {
+        align-self: center;
+    }
     .profile-pic {
         max-width: 250px;
         max-height: 250px;
@@ -309,8 +343,6 @@ nav {
         width: 220px;
     }
     .type-container {
-        font-size: 2.15rem;
-        line-height: 1.5rem;
         text-align: center;
     }
     .intro-subhead {
@@ -320,14 +352,32 @@ nav {
         display: none;
     }
 }
+@media only screen and (max-width: 500px) {
+    .type-container {
+        font-size: 2.15rem;
+        line-height: 1.5rem;
+    }
+    .intro-subhead {
+        font-size: 1.5rem;
+    }
+}
 /*============= RECENT WORK ===============*/
 .recent-work-section {
-    padding: 60px 0px;
+    padding: 40px 0px;
 }
 .recent-work-title {
     font-family: "the-seasons", sans-serif;
-    font-size: 4rem;
+    font-size: 4.8rem; 
+    line-height: 4.8rem;
     padding-bottom: 30px;
+}
+.metric-num {
+    font-size: 2rem; 
+    text-align: left; 
+    margin-bottom: -5px;
+}
+.metric-txt {
+    text-align: left;
 }
 .proj-grid {
     display: grid;
@@ -336,10 +386,10 @@ nav {
 }
 .proj-img-div {
     background-size: cover;
-    background-position: center;
+    background-color: #e7dbd6;
     border-radius: 50px;
     width: 100%;
-    padding-bottom: 65%;
+    padding-bottom: 60%;
 }
 .flex-box-proj {
     justify-content: space-between;
@@ -349,7 +399,7 @@ nav {
     padding: 30px;
     width: 100%;
     margin-bottom: 40px;
-    color: #000;
+    color: #1f0f03;
     background-color: #fff;
     text-align: center;
 }
@@ -363,26 +413,30 @@ nav {
 }
 @media only screen and (max-width: 600px) {
     .flex-box-proj {
-        padding: 15px;
+        padding: 20px;
+    }
+    .metric-txt {
+        font-size: 0.9rem;
     }
     .recent-work-title {
-        font-size: 3rem;
+        font-size: 4rem;
+        line-height: 3.8rem;
     }
 }
 .artist-portfolio-img {
-    background-image: url(./images/artist-portfolio-mockup.jpg);
-    background-position: bottom;
+    background-image: url(./images/artist-portfolio-cover.jpg);
+    background-position: center;
 }
 .travel-client-img {
-    background-image: url(./images/travel_device_layout.jpg);
-    background-position: bottom;
+    background-image: url(./images/travel-client-cover.jpg);
+    background-position: center;
 }
 .developer-portfolio-img {
-    background-image: url(./images/dev_portfolio_cover.jpg);
+    background-image: url(./images/dev-portfolio-cover.jpg);
     background-position: center;
 }
 .mold-client-img {
-    background-image: url(./images/shs_device_layout.png);
+    background-image: url(./images/service-client-mobile-cover.jpg);
     background-position: bottom center;
 }
 .proj-desc {
@@ -407,7 +461,7 @@ nav {
 #skills {
     margin-top: 60px;
 }
-.skills-slider{
+.skills-slider {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -415,10 +469,16 @@ nav {
 .skills-slider i {
     margin: 5rem;
     text-align: center;
+    color: #1f0f03;
 }
 @media only screen and (max-width: 1000px) {
     .skills-slider i {
-        margin: 2rem;
+        margin: 2.2rem;
+    }
+}
+@media only screen and (max-width: 325px) {
+    .skills-slider i {
+        margin: 1.6rem;
     }
 }
 .skills-text {
@@ -427,6 +487,7 @@ nav {
     text-align: center;
     margin-top: 1rem;
     font-family: montserrat, sans-serif;
+    color: #1f0f03;
 }
 /*============== CONTACT =================*/
 .contact-title {
@@ -434,7 +495,6 @@ nav {
     margin-bottom: 30px;
 }
 .contact-box {
-    border: 2px solid;
     border-radius: 50px;
     padding: 30px;
     min-height: 300px;
@@ -453,8 +513,7 @@ nav {
     margin-top: 80px;
 }
 .email {
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin: 15px 0px;
 }
 @media only screen and (max-width: 845px) {
     .contact {
@@ -486,14 +545,14 @@ a > i:hover {
     }
 }
 /*============= FOOTER =============*/
-footer {
-    margin: 20px 0px;
-}
 .footer-text {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: end;
+}
+#copyright {
+    text-align: left;
 }
 .sitemap-list {
     margin-left: 20px;
