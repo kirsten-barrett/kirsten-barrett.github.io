@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kirsten Barrett is an experienced Web Developer and UX Designer with a background in visual design and technical problem-solving. Explore her portfolio to see the diverse range of skills and expertise she brings to each project.">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
+    <title>About Kirsten Barrett | UX/UI Designer | Web Developer</title>
+    <!-- adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/bst4vhi.css">
+    <!-- end adobe fonts -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C69YSC6HX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2C69YSC6HX');
+    </script>
+    <!-- Google Tag  Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KTD28MV6');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTD28MV6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="./index.html" class="logo">Kirsten Barrett</a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="./index.html#recent-work" onclick="menuClose()" class="button theme-default">Case Studies</a></li>
+                    <li><a href="#" onclick="menuClose()" class="button theme-default">About</a></li>
+                    <li><a href="#contact" onclick="menuClose()" class="button theme-default anchor">Contact</a></li>
+                    <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="button theme-default">GitHub</a></li>
+                    <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="button theme-default">LinkedIn</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dark-bg">
+        <section>
+            <div class="grid-2-3 about-content">
+                <div class="vert-center-tb">
+                    <div>
+                        <img src="./images/about2.jpg" alt="" class="about-img-top">
+                        <br>
+                        <p class="photo-caption">This is what I look like when I'm working</p>
+                    </div>
+                    <div>
+                        <br>
+                        <img src="./images/about3.jpg" alt="" class="about-img-top">
+                        <br>
+                        <p class="photo-caption">This is what I look like on the weekends</p>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="about-title">About Kirsten</h1>
+                    <p>I am a graduate of WVU, where I earned my degree in Interactive Design for Media and a minor in General Business. My studies covered a range of topics including: fine arts, web design, user experience, user research, game design, interaction design, animation, human-computer interaction, graphic design and video editing.</p>
+                    <br>
+                    <h3 style="text-transform: none;">I have experience working in a...</h3>
+                    <ul class="indent">
+                        <li>Digital marketing agency as a Web UI Developer</li>
+                        <li>Game development studio as a UX Designer and Project Manager</li>
+                        <li>Digital marketing agency abroad as a UX/UI Design Intern</li>
+                    </ul>
+                    <br>
+                    <h3 style="text-transform: none;">There's a gap on my resume...</h3>
+                    <p>I made a strategic decision to prioritize self-improvement and enhance my user experience skills rather than continue on a web development path focused on SEO. While I appreciate the importance of SEO, I realized my potential reached beyond just optimizing static sites for search engines. I gave my previous employer ample notice of my decision, and committed fully to mastering UX design. Now, I am eager to leverage my newly acquired skills and jump back into the job market.</p>
+                    <br>
+                    <h3 style="text-transform: none;">Here's what I learned during my hiatus...</h3>
+                    <ul class="indent">
+                        <li>The essentials of effective information architecture</li>
+                        <li>Feedback mechanisms and loops</li>
+                        <li>The work of Don Norman and how I can best implement his principles</li>
+                        <li>Best practices for documenting case studies & organizing research</li>
+                        <li>Industry trends & more!</li>
+                    </ul>
+                    <br>
+                    <p>Still have questions? Send me an email.</p>
+                    <br><br>
+                    <p class="button theme-default" id="email-btn" onclick="copyEmail()">kirsten.barrett25@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+            <section id="contact" class="full-height vert-align-flex"> 
+                <h2 class="contact-title">Contact</h2>
+                <div class="contact">
+                    <div class="contact-box dark-bg">
+                        <h3 class="center">Send me an email:</h3>
+                        <div class="btn-container">
+                            <p class="center email">kirsten.barrett25@gmail.com</p>
+                            <p class="button theme-default-opposite center-btn" id="email-btn" onclick="copyEmail()">Copy Address</p>
+                        </div>
+                        <br>
+                        <h3 class="second-contact center">View my resume:</h3>
+                        <div class="btn-container">
+                            <a href="https://drive.google.com/file/d/1BhlLwxXXzjU9YzLMpcHI9x1So0Nd9Ago/view?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Drive</a>
+                        </div>
+                    </div>
+        
+                    <div class="contact-box theme-default-opposite">
+                        <h3 class="center">Let's connect!</h3>
+                        <div class="icon-container">
+                            <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-btns">
+                    <a href="#" class="theme-default button">Back To Top</a>
+                </div>
+                <div>
+                    <hr class="solid">
+                    <br>
+                    <div class="footer-text">
+                        <p id="copyright">© 2024 Kirsten Barrett</p>
+                        <p><a href="./sitemap.html">Sitemap</a></p>
+                    </div>
+                    <br>
+                </div>
+            </section>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
+    <script src="./script/emailButton.js"></script>
+    <script src="./script/responsiveMenu.js"></script>
+
+</body>
+</html>

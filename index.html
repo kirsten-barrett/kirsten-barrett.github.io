@@ -6,7 +6,7 @@
     <meta name="description" content="Kirsten Barrett is an experienced Web Developer and UX Designer with a background in visual design and technical problem-solving. Explore her portfolio to see the diverse range of skills and expertise she brings to each project.">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png?">
-    <title>Kirsten Barrett | Web Developer | UX Designer</title>
+    <title>Kirsten Barrett | UX/UI Designer | Web Developer</title>
     <!-- adobe fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/bst4vhi.css">
     <!-- end adobe fonts -->
@@ -34,7 +34,6 @@
     <!-- End Google Tag Manager (noscript) -->
 
 <main>
-
     <header>
         <nav>
             <ul class="nav-bar">
@@ -42,6 +41,7 @@
                 <input type="checkbox" id="check">
                 <span class="menu">
                     <li><a href="#recent-work" onclick="menuClose()" class="button theme-default">Case Studies</a></li>
+                    <li><a href="./about.html" class="button theme-default">About</a></li>
                     <li><a href="#contact" onclick="menuClose()" class="button theme-default anchor">Contact</a></li>
                     <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="button theme-default">GitHub</a></li>
                     <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="button theme-default">LinkedIn</a></li>
@@ -57,7 +57,18 @@
         <div class="full-height vert-center">
             <div class="hero-flexbox">
                 <div>
-                    <img src="./images/headshot_square.jpg" alt="Kirsten Barrett" class="profile-pic">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                          <div class="flip-box-front">
+                          </div>
+                          <div class="flip-box-back">
+                            <p>I'm all about putting in the effort, staying curious, and having fun along the way.</p>
+                            <br>
+                            <a href="./about.html" class="button theme-default">About Me</a>
+                          </div>
+                        </div>
+                    </div>
+                    <!--<img src="./images/headshot_square.jpg" alt="Kirsten Barrett" class="profile-pic">-->
                 </div>
 
                 <div>
@@ -72,10 +83,10 @@
                     </div>
                     <p class="intro-subhead">for web and screens</p>
                     <p class="intro-txt">
-                        I am an experienced UX designer with an extensive background in visual design and a talent for technical problem-solving. My diverse experience has shaped me into a well-rounded designer, passionate about making technology more human-centered and impactful. 
+                        Experienced UX designer with a background in visual arts and web development. Passionate about making technology more human-centered and impactful. 
                     </p>
-                    <br>
                     <a href="#contact" class="button theme-default-opposite">Contact Me</a>
+                    <br><br>
                 </div>
             </div>
             <a href="#recent-work"><i class="fa-solid fa-chevron-down down-arrow bounce"></i></a>
@@ -85,62 +96,114 @@
     <div id="recent-work" class="recent-work-section dark-bg">
 
         <section>
-            <div class="proj-grid">
+            <div class="desktop-proj">
+                <div class="proj-grid">
 
-                <div class="proj-col-1">
-                    <h2 class="recent-work-title">Case <br>Studies</h2>
-
-                    <a href="./service-client.html"><div class="flex-box-proj">
-                        <div>
-                            <div class="proj-img-div mold-client-img"></div>
-                            <h3>Transforming a One-Page Site into a Comprehensive Business Platform</h3>
-                            <div class="flex">
-                                <div>
-                                    <p class="green-txt metric-num">35%</p>
-                                    <p class="metric-txt">increase in user conversions</p>
+                    <div class="proj-col-1">
+                        <h2 class="recent-work-title">Case <br>Studies</h2>
+    
+                        <a href="./service-client.html"><div class="flex-box-proj">
+                            <div>
+                                <div class="proj-img-div mold-client-img"></div>
+                                <h3>Transforming a One-Page Site into a Comprehensive Business Platform</h3>
+                                <div class="flex">
+                                    <div>
+                                        <p class="green-txt metric-num">35%</p>
+                                        <p class="metric-txt">increase in user conversions</p>
+                                    </div>
+                                    <a href="./service-client.html" class="button theme-default-opposite">Case Study</a>
                                 </div>
-                                <a href="./service-client.html" class="button theme-default-opposite">Case Study</a>
                             </div>
-                        </div>
-                    </div></a>
-
-                    <a href="./artist-portfolio.html"><div class="flex-box-proj">
-                        <div>
-                            <div class="proj-img-div artist-portfolio-img"></div>
-                            <h3>Crafting a Portfolio Demo with a Creative Touch</h3>
-                            <br>
-                            <a href="./artist-portfolio.html" class="button theme-default-opposite">Case Study</a>
-                            <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Github Repo</a>
-                        </div>
-                    </div></a>
-                </div>
-
-
-                <div class="proj-col-2">
-                    <a href="./travel-client.html"><div class="flex-box-proj">
-                        <div>
-                            <div class="proj-img-div travel-client-img"></div>
-                            <h3>Reimagining a Website for a Rebranded Travel Agency</h3>
-                            <div class="flex">
-                                <div>
-                                    <p class="green-txt metric-num">20%</p>
-                                    <p>increase in client meetings</p>
+                        </div></a>
+    
+                        <a href="./artist-portfolio.html"><div class="flex-box-proj">
+                            <div>
+                                <div class="proj-img-div artist-portfolio-img"></div>
+                                <h3>Crafting a Portfolio Demo with a Creative Touch</h3>
+                                <br>
+                                <a href="./artist-portfolio.html" class="button theme-default-opposite">Case Study</a>
+                                <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Github Repo</a>
+                            </div>
+                        </div></a>
+                    </div>
+    
+    
+                    <div class="proj-col-2">
+                        <a href="./travel-client.html"><div class="flex-box-proj">
+                            <div>
+                                <div class="proj-img-div travel-client-img"></div>
+                                <h3>Reimagining a Website for a Rebranded Travel Agency</h3>
+                                <div class="flex">
+                                    <div>
+                                        <p class="green-txt metric-num">20%</p>
+                                        <p class="metric-txt">increase in client meetings</p>
+                                    </div>
+                                    <a href="./travel-client.html" class="button theme-default-opposite">Case Study</a>
                                 </div>
-                                <a href="./travel-client.html" class="button theme-default-opposite">Case Study</a>
                             </div>
-                        </div>
-                    </div></a>
-                    <a href="./developer-portfolio.html"><div class="flex-box-proj">
-                        <div>
-                            <div class="proj-img-div developer-portfolio-img"></div>
-                            <h3>Designing an Intuitive Flow For A Portfolio Website</h3>
-                            <br>
-                            <a href="./developer-portfolio.html" class="button theme-default-opposite">Case Study</a>
-                            <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
-                        </div>
-                    </div></a>
+                        </div></a>
+                        <a href="./developer-portfolio.html"><div class="flex-box-proj">
+                            <div>
+                                <div class="proj-img-div developer-portfolio-img"></div>
+                                <h3>Designing an Intuitive Flow For A Portfolio Website</h3>
+                                <br>
+                                <a href="./developer-portfolio.html" class="button theme-default-opposite">Case Study</a>
+                                <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
+                            </div>
+                        </div></a>
+                    </div>
                 </div>
+            </div>
+            <div class="mobile-proj">
+                <h2 class="recent-work-title">Case <br>Studies</h2>
+    
+                        <a href="./service-client.html"><div class="flex-box-proj">
+                            <div>
+                                <div class="proj-img-div mold-client-img"></div>
+                                <h3>Transforming a One-Page Site into a Comprehensive Business Platform</h3>
+                                <div class="flex">
+                                    <div>
+                                        <p class="green-txt metric-num">35%</p>
+                                        <p class="metric-txt">increase in user conversions</p>
+                                    </div>
+                                    <a href="./service-client.html" class="button theme-default-opposite">Case Study</a>
+                                </div>
+                            </div>
+                        </div></a>
 
+                        <a href="./travel-client.html"><div class="flex-box-proj">
+                            <div>
+                                <div class="proj-img-div travel-client-img"></div>
+                                <h3>Reimagining a Website for a Rebranded Travel Agency</h3>
+                                <div class="flex">
+                                    <div>
+                                        <p class="green-txt metric-num">20%</p>
+                                        <p class="metric-txt">increase in client meetings</p>
+                                    </div>
+                                    <a href="./travel-client.html" class="button theme-default-opposite">Case Study</a>
+                                </div>
+                            </div>
+                        </div></a>
+    
+                        <a href="./developer-portfolio.html"><div class="flex-box-proj">
+                            <div>
+                                <div class="proj-img-div developer-portfolio-img"></div>
+                                <h3>Designing an Intuitive Flow For A Portfolio Website</h3>
+                                <br>
+                                <a href="./developer-portfolio.html" class="button theme-default-opposite">Case Study</a>
+                                <a href="https://github.com/kirsten-barrett/kirsten-barrett.github.io" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
+                            </div>
+                        </div></a>
+                        
+                        <a href="./artist-portfolio.html"><div class="flex-box-proj">
+                            <div>
+                                <div class="proj-img-div artist-portfolio-img"></div>
+                                <h3>Crafting a Portfolio Demo with a Creative Touch</h3>
+                                <br>
+                                <a href="./artist-portfolio.html" class="button theme-default-opposite">Case Study</a>
+                                <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Github Repo</a>
+                            </div>
+                        </div></a>
             </div>
             <div class="btn-container">
                 <br>
@@ -188,6 +251,8 @@
                 </div>
             </div>
         </section>
+        
+    </main>
 
         <footer>
             <section id="contact" class="full-height vert-align-flex"> 
@@ -203,7 +268,7 @@
                         <br>
                         <h3 class="second-contact center">View my resume:</h3>
                         <div class="btn-container">
-                            <a href="https://drive.google.com/file/d/1j-3dO7YpZi6TR_mc6XnXLo-Vgek7blrf/view?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Drive</a>
+                            <a href="https://drive.google.com/file/d/1BhlLwxXXzjU9YzLMpcHI9x1So0Nd9Ago/view?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Drive</a>
                         </div>
                     </div>
         

@@ -16,11 +16,11 @@ Project Status
 - Version 0.1 
     - Inital Release (3.13.24)
 - Version 0.2
-    - Inital Release (6.26.24)
+    - Design Update (6.26.24)
 - Version 0.3
-    - Inital Release (9.11.24)
+    - Case Study Implementation (9.10.24)
 
-Planned Features: Dark Mode, Scroll-Interactive Skills Slider, Work History & Experience Section
+Planned Features: Work History & About Page, Scroll-Interactive Animations, Dark Mode
 
 
 Authors

@@ -1,7 +1,7 @@
 /* COPY EMAIL ADDRESS FUNCTION */
 function copyEmail() {
     navigator.clipboard.writeText("kirsten.barrett25@gmail.com");
-    alert("Copied to clipboard!");
+    alert("'kirsten.barrett25@gmail.com' copied to clipboard!");
 }
 
 /* TWO LINE FOOTER ON MOBILE */
