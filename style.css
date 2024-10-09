@@ -654,7 +654,7 @@ a > i:hover {
     margin-bottom: 20px;
 }
 .about-content {
-    padding: 60px 0px;
+    padding: 50px 0px;
 }
 .about-img-top {
     border-radius: 50px 50px 0px 0px;
@@ -663,10 +663,21 @@ a > i:hover {
 .photo-caption {
     color: #fff;
     background-color: #1f0f03;
-    padding: 10px;
+    padding: 8px;
+    text-align: center;
+}
+.email-cta {
+    padding-top: 20px;
+    padding-bottom: 100px;
 }
 .vert-center-tb {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
+}
+@media only screen and (max-width: 1000px) {
+    .vert-center-tb {
+        flex-direction: row;
+    }
 }
