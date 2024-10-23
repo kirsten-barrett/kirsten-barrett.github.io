@@ -34,8 +34,8 @@ h2 {
 }
 h3 {
     font-family: "the-seasons", sans-serif;
-    text-transform: uppercase;
-    font-size: 1.6rem;
+
+    font-size: 1.8rem;
     font-weight: 600;
 }
 .center {
@@ -299,7 +299,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     gap: 30px;
     margin-top: 60px;
 }
@@ -307,6 +307,7 @@ nav {
     max-width: 425px;
     max-height: 425px;
     border-radius: 50px;
+    text-align: center;
 }
 .signature {
     width: 300px;
@@ -459,11 +460,15 @@ nav {
     background-position: center;
 }
 .developer-portfolio-img {
-    background-image: url(./images/dev-portfolio-cover.jpg);
+    background-image: url(./images/dev-port-cover.jpg);
     background-position: center;
 }
 .mold-client-img {
     background-image: url(./images/service-client-mobile-cover.jpg);
+    background-position: bottom center;
+}
+.hhf-client-img {
+    background-image: url(./images/hhf-device-cover.jpg);
     background-position: bottom center;
 }
 .proj-desc {
@@ -602,9 +607,9 @@ a > i:hover {
     background-color: transparent;
     width: 425px;
     height: 425px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; 
     margin: 0px;
-  }
+}
 .flip-box-inner {
     position: relative;
     width: 100%;
@@ -646,7 +651,15 @@ a > i:hover {
     font-size: 1.8rem;
     font-weight: 600;
 }
-
+@media only screen and (max-width: 1000px) {
+    .flip-box {
+        width: 275px;
+        height: 275px;
+    }
+    .flip-box-back p {
+        font-size: 1.3rem;
+    }
+}
 /*============== ABOUT PAGE =============*/
 .about-title {
     font-size: 4rem;

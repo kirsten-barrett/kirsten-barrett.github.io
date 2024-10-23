@@ -9,3 +9,4 @@ const copyright = document.querySelector('#copyright')
 if (window.screen.width < 470) {
     copyright.innerHTML = "© 2024 <br>Kirsten Barrett";
 }
+
