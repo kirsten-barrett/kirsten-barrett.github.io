@@ -671,12 +671,12 @@ a > i:hover {
 }
 .about-img-top {
     border-radius: 50px 50px 0px 0px;
-    margin-bottom: -5px;
+    margin-bottom: -8px;
 }
 .photo-caption {
     color: #fff;
     background-color: #1f0f03;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
 }
 .email-cta {

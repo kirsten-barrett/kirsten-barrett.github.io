@@ -120,6 +120,11 @@
         grid-template-columns: repeat(1, auto);
     }
 }
+@media only screen and (max-width: 500px) {
+    .section-img { 
+        height: 250px; 
+    }
+}
 @media only screen and (max-width: 425px) {
     .flex-btns {
         flex-direction: column;
