@@ -169,7 +169,7 @@
                 <div class="case-study-grid">
                     <h3>Navigation Structure & Organization</h3>
                     <div>
-                        <img src="./images/service-client-nav-structure.jpg" alt="navigation structure">
+                        <img src="./images/service-client-nav-structure.jpg" alt="navigation structure" onclick="openModal();currentSlide(1)" class="hover-shadow">
                         <br><br>
                         <p>One of the most significant improvements was transitioning from a single-page website to a multi-page structure. The new site architecture provided clear, easy-to-follow navigation.</p>
                         <br>
@@ -184,8 +184,8 @@
                     <h3>Style Guide & Visual Design</h3>
                     <div>
                         <div class="double-img">
-                            <img src="./images/shs_portfolio_styleguide.jpg" alt="web design typography">
-                            <img src="./images/service-client-style2.jpg" alt="website style guide">
+                            <img src="./images/shs_portfolio_styleguide.jpg" alt="web design typography" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                            <img src="./images/service-client-style2.jpg" alt="website style guide" onclick="openModal();currentSlide(3)" class="hover-shadow">
                         </div>
                         <br>
                         <p>The client had a <b>blue and red color scheme</b> tied to their logo, so I incorporated these colors throughout the design as accents, ensuring they were bold yet balanced. I maintained a minimalistic style to prevent the colors from overwhelming the user, focusing on clean typography and plenty of white space to enhance readability.</p>
@@ -195,7 +195,7 @@
                 <div class="case-study-grid">
                     <h3>Call To Action</h3>
                     <div>
-                        <img src="./images/service-client-solution.jpg" alt="call to action design">
+                        <img src="./images/service-client-solution.jpg" alt="call to action design" onclick="openModal();currentSlide(4)" class="hover-shadow">
                         <br><br>
                         <p>As the homepage is the primary entry point, I ensured that links to call, text, or submit a form were clearly visible within the initial screen view. Additionally, I placed contact information and business hours in the header to make them immediately accessible to users.</p>
                         <br>
@@ -205,7 +205,7 @@
                 <div class="case-study-grid">
                     <h3>Valuable Information</h3>
                     <div>
-                        <img src="./images/service-client-solution2.jpg" alt="content organization">
+                        <img src="./images/service-client-solution2.jpg" alt="content organization" onclick="openModal();currentSlide(5)" class="hover-shadow">
                         <br><br>
                         <p>One challenge we faced was including a wealth of information while keeping it all digestable for the user.</p>
                         <br>
@@ -215,7 +215,7 @@
                 <div class="case-study-grid">
                     <h3>Creating Trust</h3>
                     <div>
-                        <img src="./images/service-client-solution1.png" alt="mobile ux layouts">
+                        <img src="./images/service-client-solution1.png" alt="mobile ux layouts" onclick="openModal();currentSlide(6)" class="hover-shadow">
                         <br><br>
                         <p>Featuring a FAQs tab helps users quickly find the answers they are looking for, including before-and-after images from past projects allows users to connect with the client's work, and adding testimonials takes the guesswork out of finding quality service. Each of these things fosters empathy and trust with potential clients. This makes them feel more comfortable reaching out and confident that this business can deliver the services they need.</p>
                         </div>
@@ -280,6 +280,47 @@
                     <a href="./index.html#recent-work" class="theme-default button">View Other Projects</a>
                 </div>
             </section>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="./images/service-client-nav-structure.jpg" alt="caption number one" class="light-box-img">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="./images/shs_portfolio_styleguide.jpg" alt="caption number two" class="light-box-img">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="./images/service-client-style2.jpg" alt="caption number three" class="light-box-img">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="./images/service-client-solution.jpg" alt="caption number four" class="light-box-img">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="./images/service-client-solution2.jpg" alt="caption number four" class="light-box-img">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="./images/service-client-solution1.png" alt="caption number four" class="light-box-img">
+                    </div>
+            
+                </div>
+            </div>
+
     </main>
 
     <footer>
@@ -325,6 +366,7 @@
     <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
     <script src="./script/emailButton.js"></script>
     <script src="./script/responsiveMenu.js"></script>
+    <script src="./script/lightbox.js"></script>
 
 </body>
 </html>

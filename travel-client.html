@@ -119,7 +119,7 @@
                 <div class="case-study-grid">
                     <h3>Navigation Structure & Organization</h3>
                     <div>
-                        <img src="./images/travel-client-nav-structure.jpg" alt="navigation structure" class="border-img">
+                        <img src="./images/travel-client-nav-structure.jpg" alt="navigation structure" onclick="openModal();currentSlide(1)" class="hover-shadow border-img">
                         <br><br>
                         <p>The client had a large volume of important information to share about travel basics and the numerous types of activities they offer in three different countries.</p>
                         <br>
@@ -135,9 +135,9 @@
                 <h2>Development</h2>
                 <div class="grid-half">
                     <div>
-                        <img src="./images/travel-development.jpg" alt="ux dseign">
+                        <img src="./images/travel-development.jpg" alt="ux dseign" onclick="openModal();currentSlide(2)" class="hover-shadow">
                         <br><br>
-                        <img src="./images/travel-dev.jpg" alt="web development">
+                        <img src="./images/travel-dev.jpg" alt="web development" onclick="openModal();currentSlide(3)" class="hover-shadow">
                     </div>
                     <div>
                         <p>For this project, I leveraged WordPress for its ease of use and scalability, ensuring the client could manage future updates independently. For the front-end, I choose an Elementor theme and added custom HTML, CSS, and JS to fully realize the design's interactive features.</p>
@@ -164,6 +164,32 @@
                     <a href="./index.html#recent-work" class="theme-default button">View Other Projects</a>
                 </div>
             </section>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="./images/travel-client-nav-structure.jpg" alt="caption number one" class="light-box-img">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="./images/travel-development.jpg" alt="caption number two" class="light-box-img">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="./images/travel-dev.jpg" alt="caption number three" class="light-box-img">
+                    </div>
+            
+                </div>
+            </div>
+
         </main>
 
         <footer>
@@ -209,6 +235,7 @@
     <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
     <script src="./script/emailButton.js"></script>
     <script src="./script/responsiveMenu.js"></script>
+    <script src="./script/lightbox.js"></script>
 
 </body>
 </html>

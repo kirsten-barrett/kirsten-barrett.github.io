@@ -128,7 +128,7 @@
                 <div class="case-study-grid">
                     <h3>Navigation Structure & Organization</h3>
                     <div>
-                        <img src="./images/hhf-nav-structure.jpg" alt="navigation structure">
+                        <img src="./images/hhf-nav-structure.jpg" alt="navigation structure" onclick="openModal();currentSlide(1)" class="hover-shadow">
                         <br><br>
                         <p>My goal while creating the navigation structure was to provide obvious links to essential information, most importantly, services and facility locations.</p>
                         <br>
@@ -143,8 +143,8 @@
                     <h3>Style Guide & Visual Design</h3>
                     <div>
                         <div class="double-img">
-                            <img src="./images/hhf-style-guide.jpg" alt="web design typography">
-                            <img src="./images/hhf2.jpg" alt="website style guide">
+                            <img src="./images/hhf-style-guide.jpg" alt="web design typography" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                            <img src="./images/hhf2.jpg" alt="website style guide" onclick="openModal();currentSlide(3)" class="hover-shadow">
                         </div>
                         <br>
                         <p>The client had a playful, bright color scheme tied to their logo, so I incorporated these colors throughout the design as accents, ensuring they were bold yet balanced. I maintained a minimal yet fun style to prevent overwhelm and to balance a <b>child-friendly and professional</b> look. I focused on clean typography and plenty of white space to enhance readability.</p>
@@ -210,6 +210,30 @@
                     <a href="./index.html#recent-work" class="theme-default button">View Other Projects</a>
                 </div>
             </section>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="./images/hhf-nav-structure.jpg" alt="caption number one" class="light-box-img">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="./images/hhf-style-guide.jpg" alt="caption number two" class="light-box-img">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="./images/hhf2.jpg" alt="caption number three" class="light-box-img">
+                    </div>
+                </div>
+            </div>
     </main>
 
     <footer>
@@ -255,6 +279,7 @@
     <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
     <script src="./script/emailButton.js"></script>
     <script src="./script/responsiveMenu.js"></script>
+    <script src="./script/lightbox.js"></script>
 
 </body>
 </html>
