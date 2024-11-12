@@ -40,6 +40,9 @@ h3 {
 .center {
     text-align: center;
 }
+.bold {
+    font-weight: 600;
+}
 .seasons-txt {
     font-family: "the-seasons", sans-serif;
     font-size: 1.6rem;
