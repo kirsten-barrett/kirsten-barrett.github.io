@@ -76,6 +76,12 @@ hr.solid {
     align-items: space-between;
     padding-bottom: 5%;
 }
+.vert-align-flex-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: space-between;
+}
 i {
     font-size: 4rem;
 }
@@ -447,10 +453,6 @@ nav {
     .metric-txt {
         font-size: 0.9rem;
     }
-    .homepage-h2 {
-        font-size: 4rem;
-        line-height: 3.8rem;
-    }
 }
 .artist-portfolio-img {
     background-image: url(./images/artist-portfolio-cover.jpg);
@@ -500,6 +502,12 @@ nav {
         width: 100%;
     }
 }
+@media screen and (max-width: 1267px) {
+    .homepage-h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
 @media only screen and (max-width: 845px) {
     .proj-desc {
         margin-right: 20px;
@@ -513,6 +521,9 @@ nav {
     }
     .mobile-proj {
         display: block;
+    }
+    .desktop-proj {
+        display: none;
     }
 }
 /*======== MY SKILLS ==========*/
