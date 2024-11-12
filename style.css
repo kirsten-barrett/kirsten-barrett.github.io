@@ -74,6 +74,7 @@ hr.solid {
     flex-direction: column;
     justify-content: flex-end;
     align-items: space-between;
+    padding-bottom: 5%;
 }
 i {
     font-size: 4rem;
@@ -189,9 +190,6 @@ section {
         margin: 15px 0;
     }
     .vert-align-flex {
-        text-align: center;
-    }
-    h2 {
         text-align: center;
     }
 }
@@ -509,6 +507,9 @@ nav {
     .proj-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 0px;
+    }
+    h2 {
+        text-align: center;
     }
     .mobile-proj {
         display: block;
