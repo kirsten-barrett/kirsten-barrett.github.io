@@ -314,28 +314,15 @@ nav {
     text-align: center;
 }
 .signature {
-    width: 300px;
-}
-.type-container {
-    font-size: 4rem;
-    font-family: "the-seasons", sans-serif;
-    letter-spacing: 0.4rem;
-    line-height: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 20px 0px;
-    color: #80b467;
-}
-.typed-cursor {
-    color: #9dca87;
-    padding-left: 5px;
+    width: 400px;
+    margin-bottom: 20px;
 }
 .intro-subhead {
     font-family: "the-seasons", sans-serif;
     color:#80b467; 
-    font-size: 1.8rem; 
+    font-size: 1.6rem; 
     font-weight: 800; 
-    margin-top: -15px;
+    margin-top: -10px;
     margin-bottom: 10px;
 }
 .intro-txt {
@@ -358,6 +345,11 @@ nav {
 }
 
 /* ABOUT SECTION MEDIA QUERIES */
+@media only screen and (max-width: 1230px) {
+    .signature {
+        width: 300px;
+    }
+}
 @media only screen and (max-width: 1000px) {
     .hero-flexbox {
         flex-direction: column;
@@ -371,26 +363,20 @@ nav {
         max-width: 250px;
         max-height: 250px;
     }
-    .signature {
-        width: 220px;
-    }
-    .type-container {
-        text-align: center;
-    }
     .intro-subhead {
         font-size: 2rem;
+        margin-bottom: 0px;
     }
     i.down-arrow {
         display: none;
     }
 }
 @media only screen and (max-width: 500px) {
-    .type-container {
-        font-size: 2.15rem;
-        line-height: 1.5rem;
-    }
     .intro-subhead {
         font-size: 1.5rem;
+    }
+    .signature {
+        width: 250px;
     }
 }
 /*============= RECENT WORK ===============*/
