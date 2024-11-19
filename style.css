@@ -691,7 +691,7 @@ a > i:hover {
     padding: 50px 0px;
 }
 .about-img-top {
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 50px 0px 0px 0px;
     margin-bottom: -8px;
 }
 .photo-caption {
