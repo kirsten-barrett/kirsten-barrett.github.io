@@ -518,6 +518,7 @@ nav {
 /*======== MY SKILLS ==========*/
 #skills {
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 .skills-slider {
     display: flex;
@@ -525,7 +526,7 @@ nav {
     justify-content: space-between;
 }
 .skills-slider i {
-    margin: 5rem;
+    margin: 2rem 5rem;
     text-align: center;
     color: #1f0f03;
 }
@@ -584,11 +585,12 @@ nav {
 @media only screen and (min-width: 1001px) {
     
 }
-.fa-linkedin {
+.fa-linkedin-in, .fa-github {
     margin-right: 20px;
 }
 a > i {
     transition: transform .2s;
+    font-size: 2.5rem;
 }
 a > i:hover {
     transform: scale(1.2);
@@ -596,6 +598,7 @@ a > i:hover {
 .icon-container {
     display: flex;
     justify-content: center;
+    margin: 1rem;
 }
 @media only screen and (max-width: 375px) {
     #email-btn {
@@ -618,6 +621,11 @@ a > i:hover {
 }
 .sitemap-list {
     margin-left: 20px;
+}
+#footer {
+    background-color:#e7dbd6;
+    color:#1f0f03;
+    padding: 60px 0px;
 }
 
 

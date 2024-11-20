@@ -39,11 +39,9 @@
                 <li><a href="./index.html" class="logo">Kirsten Barrett</a></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
+                    <li><a href="./about.html" class="button theme-default">About</a></li>
                     <li><a href="./index.html#recent-work" onclick="menuClose()" class="button theme-default">Projects</a></li>
-                    <li><a href="#" onclick="menuClose()" class="button theme-default">About</a></li>
                     <li><a href="#contact" onclick="menuClose()" class="button theme-default anchor">Contact</a></li>
-                    <li class="mobile-only"><a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="button theme-default">GitHub</a></li>
-                    <li class="mobile-only"><a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="button theme-default">LinkedIn</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>
@@ -77,7 +75,7 @@
                     </ul>
                     <br>
                     <h3 class="seasons-txt" style="text-transform: none;">There's a gap on my resume...</h3>
-                    <p>I made a strategic decision in early 2024 to prioritize self-improvement and enhance my professional skills by pursuing a certification in Front-End Software Engineering from Codecademy. I gave my previous employer ample notice of my decision, and committed fully to mastering modern web technologies and elevating my coding skills for both web and mobile. I also dedicated time to enhancing my knowledge of UX research and optimizing designs for specific audiences. This intentional investment in my growth has equipped me with cutting-edge knowledge, and I'm now excited to bring these enhanced capabilities back to the job market.</p>
+                    <p>I made a strategic decision in early 2024 to prioritize self-improvement and enhance my professional skills by pursuing a certification in Front-End Software Engineering from Codecademy. I gave my previous employer ample notice of my decision, and committed fully to mastering modern web technologies and elevating my coding skills for both web and mobile. I also dedicated time to enhancing my knowledge of UX research and optimizing designs for specific audiences. This intentional investment in my growth has equipped me with cutting-edge knowledge, and I am now excited to bring these enhanced capabilities back to the job market.</p>
                     <br>
                     <h3 class="seasons-txt" style="text-transform: none;">Here's what I learned during my hiatus...</h3>
                     <ul class="indent">
@@ -101,26 +99,28 @@
     <footer>
         <section id="contact" class="full-height vert-align-flex-bottom"> 
             <br><br>
-            <h2 class="homepage-h2">Let's Keep In Touch</h2>
+            <h2 class="homepage-h2">Let's Keep In Touch...</h2>
             <div class="contact">
                 <div class="contact-box dark-bg">
                     <h3 class="center seasons-txt">Send me an email:</h3>
                     <div class="btn-container">
-                        <p class="center email">kirsten.barrett25@gmail.com</p>
-                        <p class="button theme-default-opposite center-btn" id="email-btn" onclick="copyEmail()">Copy Address</p>
+                        <p class="center email"><a href="mailto:kirsten.barrett25@gmail.com">kirsten.barrett25@gmail.com</a></p>
+                        <p class="button theme-default center-btn" id="email-btn" onclick="copyEmail()">Copy Address</p>
                     </div>
                     <br>
                     <h3 class="second-contact center seasons-txt">View my resume:</h3>
                     <div class="btn-container">
-                        <a href="https://drive.google.com/file/d/1Utt7hZMcNtXMNjjeKr1p5hAehLBo7u8S/view?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Drive</a>
+                        <a href="https://drive.google.com/file/d/1Utt7hZMcNtXMNjjeKr1p5hAehLBo7u8S/view?usp=sharing" target="_blank" rel="noopener" class="button theme-default center-btn">Google Document</a>
                     </div>
                 </div>
     
                 <div class="contact-box theme-default-opposite">
                     <h3 class="center seasons-txt">Let's connect!</h3>
+                    <br>
                     <div class="icon-container">
-                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-github"></i></a>
+                        <!--<a href="https://dribbble.com/kirstenjune_" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-dribbble"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -132,12 +132,11 @@
                 <br>
                 <div class="footer-text">
                     <p id="copyright">© 2024 Kirsten Barrett</p>
-                    <p><a href="./sitemap.html">Sitemap</a></p>
                 </div>
                 <br>
             </div>
         </section>
-</footer>
+    </footer>
 
     <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
     <script src="./script/emailButton.js"></script>
