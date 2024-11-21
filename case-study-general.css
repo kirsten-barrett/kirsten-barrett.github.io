@@ -38,24 +38,18 @@
 }
 .case-study-grid {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 3fr;
     column-gap: 40px;
     row-gap: 40px;
     margin: 50px 0px;
 }
-.subhead {
-    padding-top: 60px;
-    font-size: 1.2rem;
-}
-.case-study-grid {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    column-gap: 40px;
-    row-gap: 40px;
-}
 .case-study-grid img {
     width: 100%;
     object-fit: contain;
+}
+.subhead {
+    padding-top: 60px;
+    font-size: 1.2rem;
 }
 .double-img {
     display: flex;
