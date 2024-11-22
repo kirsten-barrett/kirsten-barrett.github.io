@@ -36,12 +36,18 @@
     <header>
         <nav>
             <ul class="nav-bar">
-                <li><a href="./index.html" class="logo">Kirsten Barrett</a></li>
+                <li><a href="/index.html"><h1 class="logo">Kirsten Barrett</h1></a></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
                     <li><a href="./about.html" class="button theme-default">About</a></li>
                     <li><a href="./index.html#recent-work" onclick="menuClose()" class="button theme-default">Projects</a></li>
                     <li><a href="#contact" onclick="menuClose()" class="button theme-default anchor">Contact</a></li>
+                    <div class="mobile-only" style="margin-right: 35px;">
+                        <br><br><br>
+                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-github"></i></a>
+                        <!--<a href="https://dribbble.com/kirstenjune_" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-dribbble"></i></a>-->
+                    </div>
                     <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>
@@ -49,51 +55,84 @@
         </nav>
     </header>
 
-    <main class="dark-bg">
-        <section>
-            <div class="grid-2-3 about-content">
-                <div class="vert-center-tb">
-                    <div>
-                        <img src="./images/about-img1.jpg" alt="Kirsten Barrett" class="about-img-top">
-                        <p class="photo-caption">This is what I look like when I'm working</p>
+    <main>
+        <div class="dark-bg">
+            <section class="about-page">
+                <h1 class="about-title">About Kirsten</h1>
+                        <p>I am a graduate of WVU, where I earned my degree in Interactive Design for Media and a minor in General Business. My studies covered a range of topics including: web design, web development, fine arts, user experience, user research, game design, game development, interaction design, animation, human-computer interaction, graphic design and video editing.</p>
+                        <br>
+                        <h3 class="seasons-txt">I have experience working in a...</h3>
+                        <ul class="indent">
+                            <li>Digital marketing agency as a Web UI Developer</li>
+                            <li>Digital marketing agency abroad as a UX/UI Design Intern</li>
+                            <li>Game development studio as a Designer, Developer, Project Manager, & Teaching Assistant</li>
+                            <li>Digital media company as a Web Developer and Graphic Designer</li>
+                        </ul>
+                        <br>
+                        <h3 class="seasons-txt">There's a gap on my resume...</h3>
+                        <p>I made a strategic decision in early 2024 to prioritize self-improvement and enhance my professional skills by pursuing a certification in Front-End Software Engineering from Codecademy. I gave my previous employer ample notice of my decision, and committed fully to mastering modern web technologies and elevating my coding skills for both web and mobile. I also dedicated time to enhancing my knowledge of UX research and optimizing designs for specific audiences. This intentional investment in my growth has equipped me with cutting-edge knowledge, and I am now excited to bring these enhanced capabilities back to the job market.</p>
+                        <br>
+                        <h3 class="seasons-txt">Here's what I learned during my hiatus...</h3>
+                        <ul class="indent">
+                            <li>React and how to build web applications</li>
+                            <li>Web security best practices</li>
+                            <li>The essentials of effective information architecture</li>
+                            <li>UX research techniques</li>
+                            <li>Unit testing</li>
+                            <li>Industry trends & more!</li>
+                        </ul>
+                <!--<div class="grid-2-3 about-content">
+                    <div class="vert-center-tb">
+                        <div>
+                            <img src="./images/about-img1.jpg" alt="Kirsten Barrett" class="about-img-top">
+                            <p class="photo-caption">This is what I look like when I'm working</p>
+                        </div>
+                        <div>
+                            <img src="./images/about-img2.jpg" alt="Kirsten Barrett" class="about-img-top">
+                            <p class="photo-caption">This is what I look like on the weekends</p>
+                        </div>
                     </div>
                     <div>
-                        <img src="./images/about-img2.jpg" alt="Kirsten Barrett" class="about-img-top">
-                        <p class="photo-caption">This is what I look like on the weekends</p>
+                        <h1 class="about-title">About Kirsten</h1>
+                        <p>I am a graduate of WVU, where I earned my degree in Interactive Design for Media and a minor in General Business. My studies covered a range of topics including: web design, web development, fine arts, user experience, user research, game design, game development, interaction design, animation, human-computer interaction, graphic design and video editing.</p>
+                        <br>
+                        <h3 class="seasons-txt" style="text-transform: none;">I have experience working in a...</h3>
+                        <ul class="indent">
+                            <li>Digital marketing agency as a Web UI Developer</li>
+                            <li>Digital marketing agency abroad as a UX/UI Design Intern</li>
+                            <li>Game development studio as a Designer, Developer, Project Manager, & Teaching Assistant</li>
+                            <li>Digital media company as a Web Developer and Graphic Designer</li>
+                        </ul>
+                        <br>
+                        <h3 class="seasons-txt" style="text-transform: none;">There's a gap on my resume...</h3>
+                        <p>I made a strategic decision in early 2024 to prioritize self-improvement and enhance my professional skills by pursuing a certification in Front-End Software Engineering from Codecademy. I gave my previous employer ample notice of my decision, and committed fully to mastering modern web technologies and elevating my coding skills for both web and mobile. I also dedicated time to enhancing my knowledge of UX research and optimizing designs for specific audiences. This intentional investment in my growth has equipped me with cutting-edge knowledge, and I am now excited to bring these enhanced capabilities back to the job market.</p>
+                        <br>
+                        <h3 class="seasons-txt" style="text-transform: none;">Here's what I learned during my hiatus...</h3>
+                        <ul class="indent">
+                            <li>React and how to build web applications</li>
+                            <li>Web security best practices</li>
+                            <li>The essentials of effective information architecture</li>
+                            <li>UX research techniques</li>
+                            <li>Unit testing</li>
+                            <li>Industry trends & more!</li>
+                        </ul>
                     </div>
+                </div>-->
+                <div class="center email-cta">
+                    <p>Still have questions? Send me an email.</p>
+                    <br>
+                    <p class="button theme-default email-add-btn" id="email-btn" onclick="copyEmail()">kirsten.barrett25@gmail.com</p>
                 </div>
-                <div>
-                    <h1 class="about-title">About Kirsten</h1>
-                    <p>I am a graduate of WVU, where I earned my degree in Interactive Design for Media and a minor in General Business. My studies covered a range of topics including: web design, web development, fine arts, user experience, user research, game design, game development, interaction design, animation, human-computer interaction, graphic design and video editing.</p>
-                    <br>
-                    <h3 class="seasons-txt" style="text-transform: none;">I have experience working in a...</h3>
-                    <ul class="indent">
-                        <li>Digital marketing agency as a Web UI Developer</li>
-                        <li>Digital marketing agency abroad as a UX/UI Design Intern</li>
-                        <li>Game development studio as a Designer, Developer, Project Manager, & Teaching Assistant</li>
-                        <li>Digital media company as a Web Developer and Graphic Designer</li>
-                    </ul>
-                    <br>
-                    <h3 class="seasons-txt" style="text-transform: none;">There's a gap on my resume...</h3>
-                    <p>I made a strategic decision in early 2024 to prioritize self-improvement and enhance my professional skills by pursuing a certification in Front-End Software Engineering from Codecademy. I gave my previous employer ample notice of my decision, and committed fully to mastering modern web technologies and elevating my coding skills for both web and mobile. I also dedicated time to enhancing my knowledge of UX research and optimizing designs for specific audiences. This intentional investment in my growth has equipped me with cutting-edge knowledge, and I am now excited to bring these enhanced capabilities back to the job market.</p>
-                    <br>
-                    <h3 class="seasons-txt" style="text-transform: none;">Here's what I learned during my hiatus...</h3>
-                    <ul class="indent">
-                        <li>React and how to build web applications</li>
-                        <li>Web security best practices</li>
-                        <li>The essentials of effective information architecture</li>
-                        <li>UX research techniques</li>
-                        <li>Unit testing</li>
-                        <li>Industry trends & more!</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="center email-cta">
-                <p>Still have questions? Send me an email.</p>
-                <br>
-                <p class="button theme-default" id="email-btn" onclick="copyEmail()">kirsten.barrett25@gmail.com</p>
-            </div>
-        </section>
+            </section>
+        </div>
+        <div class="dark-bg">
+            <img src="./images/rock-climbing.jpg" alt="" class="about-sq-img">
+            <img src="./images/about-img1.jpg" alt="" class="about-sq-img">
+            <img src="./images/notebook.jpg" alt="" class="about-sq-img">
+            <img src="./images/about-img2.jpg" alt="" class="about-sq-img">
+            <img src="./images/desk.jpg" alt="" class="about-sq-img">
+            <img src="./images/hiking.jpg" alt="" class="about-sq-img">
+        </div>
     </main>
 
     <footer>

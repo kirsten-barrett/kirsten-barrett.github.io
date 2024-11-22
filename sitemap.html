@@ -37,12 +37,18 @@
     <header>
         <nav>
             <ul class="nav-bar">
-                <li class="logo"><a href="./index.html">Kirsten Barrett</a></li>
+                <li><a href="/index.html"><h1 class="logo">Kirsten Barrett</h1></a></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
                     <li><a href="./about.html" class="button theme-default">About</a></li>
                     <li><a href="./index.html#recent-work" onclick="menuClose()" class="button theme-default">Projects</a></li>
                     <li><a href="#contact" onclick="menuClose()" class="button theme-default anchor">Contact</a></li>
+                    <div class="mobile-only" style="margin-right: 35px;">
+                        <br><br><br>
+                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-github"></i></a>
+                        <!--<a href="https://dribbble.com/kirstenjune_" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-dribbble"></i></a>-->
+                    </div>
                     <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars" onclick="menuOpen()"></i></label>

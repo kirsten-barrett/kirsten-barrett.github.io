@@ -255,6 +255,10 @@ nav {
 .mobile-only {
     display: none;
 }
+.flex-vert-just {
+    display: flex;
+    flex-direction: column;
+}
 .open-menu, .close-menu {
     position: absolute;
     cursor: pointer;
@@ -585,7 +589,7 @@ nav {
 @media only screen and (min-width: 1001px) {
     
 }
-.fa-linkedin-in, .fa-github {
+.fa-linkedin-in {
     margin-right: 20px;
 }
 a > i {
@@ -694,24 +698,49 @@ a > i:hover {
     font-size: 4rem;
     line-height: 4rem;
     margin-bottom: 20px;
+    padding-top: 60px;
 }
+.about-page h3 {
+    font-size:2rem;
+}
+/*
 .about-content {
     padding: 50px 0px;
 }
 .about-img-top {
     border-radius: 50px 0px 0px 0px;
     margin-bottom: -8px;
+}*/
+.about-sq-img {
+    width: 16.67%;
+    display: inline;
+    margin: -2.3px;
 }
+@media only screen and (max-width: 1000px) {
+    .about-sq-img {
+        width: 33.34%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .about-sq-img {
+        width: 50%;
+    }
+    .email-add-btn {
+        padding: 10px 5px;
+    }
+}
+/*
 .photo-caption {
     color: #fff;
     background-color: #1f0f03;
     padding: 10px;
     text-align: center;
-}
+}*/
 .email-cta {
     padding-top: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
 }
+/*
 .vert-center-tb {
     display: flex;
     flex-direction: column;
