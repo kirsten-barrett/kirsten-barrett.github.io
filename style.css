@@ -75,7 +75,7 @@ hr.solid {
 .vert-align-flex {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: space-between;
     padding-bottom: 5%;
 }
