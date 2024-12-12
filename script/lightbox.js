@@ -10,6 +10,16 @@ function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
 
+// Arrow navigation
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowRight') {
+    plusSlides(1)
+  } else if (event.key === 'ArrowLeft') {
+    plusSlides(-1)
+  }
+})
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
   

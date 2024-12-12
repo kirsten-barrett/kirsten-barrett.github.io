@@ -321,6 +321,21 @@ nav {
     width: 400px;
     margin-bottom: 20px;
 }
+.title {
+    font-size: 3.8rem; 
+}
+@media only screen and (max-width: 1664px) {
+    .title {
+        font-size: 3.2rem;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .title {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        margin-bottom: 10px;;
+    }
+}
 .intro-subhead {
     font-family: "the-seasons", sans-serif;
     color:#80b467; 
@@ -396,7 +411,8 @@ nav {
     text-transform: none;
 }
 .metric-num {
-    font-size: 1.5rem; 
+    font-size: 1.6rem; 
+    font-weight: 600;
     text-align: left; 
     margin-bottom: -5px;
 }
@@ -473,6 +489,10 @@ nav {
 }
 .wvu-img {
     background-image: url(./images/wvu.jpg);
+    background-position: center;
+}
+.monriver-img {
+    background-image: url(./images/monrivergames-100.jpg);
     background-position: center;
 }
 .enfusion-img {
@@ -610,10 +630,6 @@ a > i:hover {
     }
 }
 /*============= FOOTER =============*/
-/*#contact {
-    background-color: #1f0f03;
-    color: #fff;
-}*/
 .footer-text {
     text-transform: uppercase;
     display: flex;
@@ -631,10 +647,6 @@ a > i:hover {
     color:#1f0f03;
     padding: 60px 0px;
 }
-
-
-
-
 /*============ FLIP BOX =============*/
 .flip-box {
     background-color: transparent;
@@ -703,14 +715,6 @@ a > i:hover {
 .about-page h3 {
     font-size:2rem;
 }
-/*
-.about-content {
-    padding: 50px 0px;
-}
-.about-img-top {
-    border-radius: 50px 0px 0px 0px;
-    margin-bottom: -8px;
-}*/
 .about-sq-img {
     width: 16.67%;
     display: inline;
@@ -729,28 +733,9 @@ a > i:hover {
         padding: 10px 5px;
     }
 }
-/*
-.photo-caption {
-    color: #fff;
-    background-color: #1f0f03;
-    padding: 10px;
-    text-align: center;
-}*/
 .email-cta {
     padding-top: 20px;
     padding-bottom: 60px;
-}
-/*
-.vert-center-tb {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-}
-@media only screen and (max-width: 1000px) {
-    .vert-center-tb {
-        flex-direction: row;
-    }
 }
 /*=========== LIGHTBOX ==============*/
 .modal {
@@ -776,8 +761,10 @@ a > i:hover {
 }
 
 .light-box-img {
-    width: 100%;
+    width: 80%;
     margin-bottom: 100px;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 
@@ -836,7 +823,7 @@ a > i:hover {
   
   /* Number text (1/3 etc) */
   .numbertext {
-    color: gray;
+    color: rgb(196, 196, 196);
     font-size: 14px;
     padding: 8px 12px;
     position: absolute;
