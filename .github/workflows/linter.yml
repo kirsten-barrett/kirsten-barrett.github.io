@@ -28,5 +28,6 @@ jobs:
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_CSS: true
+          FIX_CSS: true
           FIX_CSS_PRETTIER: true
           
