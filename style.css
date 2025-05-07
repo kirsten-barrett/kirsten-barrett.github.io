@@ -2,14 +2,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-}
+    padding: 0;}
 html {
     scroll-behavior: smooth;
 }
 .theme-default {
-    background-color: #fff;
-    color: #1f0f03;
+  background-color: #fff;
+  color: #1f0f03;
 }
 .theme-default-opposite {
     background-color: #1f0f03;
