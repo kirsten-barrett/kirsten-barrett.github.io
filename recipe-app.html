@@ -36,7 +36,7 @@
     <header>
         <nav>
             <ul class="nav-bar">
-                <li><a href="./index.html"><h1 class="logo">Kirsten Barrett</h1></a></li>
+                <li><a href="./index.html"><p class="logo">Kirsten Barrett</p></a></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
                     <li><a href="./about.html" class="button theme-default">About</a></li>
@@ -330,27 +330,30 @@
 
     <footer>
         <section id="contact" class="full-height vert-align-flex-bottom"> 
+            <hr class="solid">
             <br><br>
-            <h2 class="homepage-h2">Let's Keep In Touch</h2>
+            <h2 class="homepage-h2">Let's Keep In Touch...</h2>
             <div class="contact">
                 <div class="contact-box dark-bg">
                     <h3 class="center seasons-txt">Send me an email:</h3>
                     <div class="btn-container">
-                        <p class="center email">kirsten.barrett25@gmail.com</p>
-                        <p class="button theme-default-opposite center-btn" id="email-btn" onclick="copyEmail()">Copy Address</p>
+                        <p class="center email"><a href="mailto:kirsten.barrett25@gmail.com">kirsten.barrett25@gmail.com</a></p>
+                        <p class="button theme-default center-btn" id="email-btn" onclick="copyEmail()">Copy Address</p>
                     </div>
-                    <br>
+                    <!--<br>
                     <h3 class="second-contact center seasons-txt">View my resume:</h3>
                     <div class="btn-container">
-                        <a href="https://drive.google.com/file/d/1XBovTyjpKXrL6SCVcYGg7bZQGpFn-vOX/view?usp=sharing" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Drive</a>
-                    </div>
+                        <a href="https://drive.google.com/file/d/1XBovTyjpKXrL6SCVcYGg7bZQGpFn-vOX/view?usp=sharing" target="_blank" rel="noopener" class="button theme-default center-btn">Google Document</a>
+                    </div>-->
                 </div>
     
                 <div class="contact-box theme-default-opposite">
-                    <h3 class="center seasons-txt">Let's connect!</h3>
+                    <h3 class="center seasons-txt" style="font-size: 2.2rem;">Let's connect!</h3>
+                    <br>
                     <div class="icon-container">
-                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/kirsten-barrett?tab=repositories" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-github"></i></a>
+                        <!--<a href="https://dribbble.com/kirstenjune_" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-dribbble"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -361,13 +364,12 @@
                 <hr class="solid">
                 <br>
                 <div class="footer-text">
-                    <p id="copyright">© 2024 Kirsten Barrett</p>
-                    <p><a href="./sitemap.html">Sitemap</a></p>
+                    <p id="copyright">© 2026 Kirsten Barrett</p>
                 </div>
                 <br>
             </div>
         </section>
-</footer>
+    </footer>
 
     <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
     <script src="./script/emailButton.js"></script>
