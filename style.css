@@ -481,6 +481,10 @@ nav {
     background-image: url(./images/hhf-device-cover.jpg);
     background-position: bottom center;
 }
+.cornell-img {
+    background-image: url(./images/cornell.png);
+    background-position: center;
+}
 .seo-img {
     background-image: url(./images/seo-locale.jpg);
     background-position: center;
